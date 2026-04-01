@@ -22,25 +22,96 @@
         9. 색상 선택 필드를 사용하여 "색상"을 선택할 수 있는 필드를 만드세요.
     -->
 
-    아이디를 입력하세요.
+    아이디를 입력하세요. <input type="text">
     <br>
-    비밀번호라서 안 보여요.
+    비밀번호라서 안 보여요.<input type="password" placeholder="하기싫다">
     <br>
-    이메일을 입력하세요.
+    이메일을 입력하세요.<input type="email">
     <br>
-    성별을 선택하세요.
-    남성
-    여성
+    성별을 선택하세요. 
+    <input type="radio" name="gender">남성
+    <input type="radio" name="gender">여성
     <br>
-    약관에 동의합니다.
+    약관에 동의합니다.<input type="checkbox">
     <br>
-    파일을 선택합니다.
+    파일을 선택합니다. <input type="file" multiple>
     <br>
-    날짜를 선택하세요.
+    날짜를 선택하세요.<input type="date">
     <br>
-    날짜와 시간을 선택하세요.
+    날짜와 시간을 선택하세요.<input type="datetime-local">
     <br>
-    색을 선택하세요.
+    색을 선택하세요.<input type="color">
+  <table border="1">
+    <tr>
+        <th colspan="5">이력서요약</th>
+    </tr>
+    <tr>
+        <th rowspan="2">기본정보</th>
+        <th>이름</th>
+        <td>aaa</td>
+        <th>연락처</th>
+        <td>1111</td>
+    </tr>
+    <tr>
+        <th>이메일</th>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <th rowspan="2">이력</th>
+        <th>학력</th>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <th>경력</th>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <th>기술</th>
+        <td colspan="4"></td>
+    </tr>
+  </table>
+<table border="1">
+    <tr>
+        <th colspan="6">결제 청구서</th>
+    </tr>
+    <tr>
+        <th rowspan="2">주문자</th>
+        <th>이름</th>
+        <td></td>
+        <th rowspan="2">결제정보</th>
+        <th rowspan="2" colspan="2"></th>
+    </tr>
+    <tr>
+        <th>연락처</th>
+        <th></th>
+    </tr>
+    <tr>
+        <th rowspan="3">상품</th>
+        <th>상품명</th>
+        <th>수량</th>
+        <th>금액</th>
+        <th rowspan="3">배송비</th>
+        <th rowspan="3">300</th>
+    </tr>
+    <tr>
+        <td>사과</td>
+        <td>4</td>
+        <td>1200</td>
+    </tr>
+    <tr>
+        <td>배</td>
+        <td>6</td>
+        <td>1300</td>
+    </tr>
+    <tr>
+        <th colspan="4">총 결제 금액</th>
+        <th colspan="2"></th>
+    </tr>
+</table>
+
+
+
+
 
 </body>
 </html>

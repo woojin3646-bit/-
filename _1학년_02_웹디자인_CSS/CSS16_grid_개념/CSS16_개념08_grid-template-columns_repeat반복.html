@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [grid-template-columns: repeat 반복]   
+            1. repeat(3, 1fr)은
+                1fr 1fr 1fr 을 의미합니다.
+            2. 열을 반복해서 만들 때 코드가 짧아집니다.
+        */
+        
+        .grid {
+            display: grid;
+            width: 1050px;
+            grid-template-columns: repeat(3, 1fr);
+
+            background-color: antiquewhite;
+            height:500px;
+        }        
+        .box { 
+            width:80px; 
+            height:80px; 
+            background:chocolate; 
+            border:1px solid black; 
+
+        }          
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

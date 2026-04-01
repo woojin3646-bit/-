@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [리스트 기호 문자 변경]
+            1. list-style-type 속성은 기본 기호뿐 아니라,
+               '문자'를 기호처럼 사용할 수도 있습니다.
+            2. 따옴표('') 안에 원하는 문자열을 작성합니다.
+            3. 짧은 텍스트(예: '목차', 'Step')를 붙일  때 유용합니다.
+        */
+
+        .toc {
+            list-style-type: '목차 ';
+        }        
+    </style>
+</head>
+<body>
+    <h2>문자 기호 사용</h2>
+
+    <ul class="toc">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <ol class="toc">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>    
+</body>
+</html>

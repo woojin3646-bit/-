@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [블록 요소의 기본 값 - height:auto]
+            1. 블록 요소의 기본 height 값은 auto입니다.
+            2. height: auto는
+                내부 콘텐츠의 높이에 맞춰 자동으로 계산된다는 의미입니다.
+            3. 내용이 없으면 높이는 0입니다.
+            4. 내용이 많아지면 요소 높이도 자동으로 늘어납니다.
+            5. 즉, height: auo 는
+                콘텐츠 기준 자동 계산이 원칙입니다.
+        */
+
+        .box {
+            background: yellowgreen;
+
+        }        
+    </style>    
+</head>
+<body>
+    <h3>내용이 없으면 height: 0</h3>
+    <div class="box">
+    </div>
+
+    <hr>
+
+    <h3>내용이 많으면 자동으로 늘어남1</h3>
+    <div class="box">
+        내용1
+    </div>
+
+    <hr>
+    
+    <h3>내용이 많으면 자동으로 늘어남2</h3>
+    <div class="box">
+        내용1 <br>
+        내용2
+    </div>      
+</body>
+</html>

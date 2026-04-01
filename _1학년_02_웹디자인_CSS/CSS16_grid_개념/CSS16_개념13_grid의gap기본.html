@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [grid의 gap 기본] 
+            1. gap은 그리드 아이템 사이의 간격을 만드는 속성입니다.
+            2. gap은 부모에 적용합니다.
+            3. gap은
+                - 열(column) 사이 간격
+                - 행(row) 사이 간격을 동시에 적용합니다.
+            4. 현재 예제는
+                - grid-template-columns: 150px 150px;
+                - 2열이 만들어 집니다.
+                - 아이템이 4개이므로 2행이 생성됩니다.
+            5. gap: 16px;
+                - 가로 간격 16px
+                - 세로 간격 16px 이 동시에 적용됩니다.
+                - 양 끝 바깥에는 적용되지 않습니다.
+        */
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 150px 150px;
+            align-content: center;
+            gap: 16px;
+
+            background-color: antiquewhite;
+            height:500px;
+        }        
+        .box { 
+            width:100px; 
+            height:100px; 
+            background:chocolate; 
+            border:1px solid black; 
+
+        }          
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

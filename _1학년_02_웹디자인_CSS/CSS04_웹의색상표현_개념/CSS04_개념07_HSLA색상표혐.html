@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [HSLA 색상 표현]
+            1. hsla(H, S, L, A) 형태로 HSL에 투명도(Alpha)를 추가한 방식입니다.
+            2. A(알파)는 0~1 범위이며, 값이 작을수록 더 투명해집니다.
+                - 0     : 완전 투명
+                - 1     : 완전 불투명
+        */    
+            
+        .a1 {
+            background-color: hsla(0, 100%, 50%, 1);
+        }
+        .a06 {
+            background-color: hsla(0, 100%, 50%, 0.6);
+        }
+        .a03 {
+            background-color: hsla(0, 100%, 50%, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h3 class="a1">background-color: hsla(0, 100%, 50%, 1);</h3>
+    <h3 class="a06">background-color: hsla(0, 100%, 50%, 0.6);</h3>
+    <h3 class="a03">background-color: hsla(0, 100%, 50%, 0.3);</h3>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [grid의 justify-content : 그리드 전체 가로 이동]   
+            1. grid에서 justify-content는
+                "그리드 전체 영역"을 가로 방향으로 정렬하는 속성입니다.
+            2. 중요한 점은
+                개별 아이템을 정렬하는 것이 아니라
+                "열 전체 묶음"을 정렬한다는 것입니다.
+            3. 현재 예제는
+                grid-template-columns: 150px 150px 150px;
+                총 450px 너비의 그리드가 만들어집니다.
+            4. 만약 부모 너비가 더 크다면,
+                남는 공간이 생기고,
+                justify-content가 그 남는 공간 안에서
+                그리드를 이동시킵니다.
+            5. flex와 다르게 아이템 정렬이 아닙니다.
+        */
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+            justify-content: center;
+
+            background-color: antiquewhite;
+            height:500px;
+        }        
+        .box { 
+            width:100px; 
+            height:100px; 
+            background:chocolate; 
+            border:1px solid black; 
+
+        }          
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

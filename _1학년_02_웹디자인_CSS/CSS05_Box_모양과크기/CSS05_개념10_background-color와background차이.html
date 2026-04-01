@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [background-color와 background 차이]
+            1. background-color 속성
+                - 배경 색상만 지정하는 속성입니다.
+                - 가장 기본이 되는 배경 속성입니다.
+                - 단일 기능 속성입니다.
+                - 예)
+                    background-color: skyblue;
+
+            2. background 속성
+                - 배경과 관련된 여러 속성을 한 번에 설정하는 단축 속성 입니다.
+                - 여러 값을 동시에 작성할 수 있습니다.
+                - 예)
+                    background: url(img.jpg) no-repeat center orange;
+        */
+
+        .backgroundcolor {
+            width: 300px;
+            height: 150px;
+            
+            background-image: url("https://dummyimage.com/100x100/cccccc/000000");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: skyblue;
+        }
+        .background {
+            width: 300px;
+            height: 150px;
+
+            background: url("https://dummyimage.com/100x100/cccccc/000000") no-repeat center orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="backgroundcolor">
+    </div>
+
+    <div class="background">
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [텍스트 행간]
+            1. line-height 속성은 텍스트의 행간을 설정합니다.
+            2. 행간이란 각 텍스트 줄 간의 간격을 의미합니다. 이는 텍스트의 최종적인 높이를 결정합니다.
+            3. 한글은 일반적으로 정사각형에 맞추어 폰트를 제작하지만, 영문 등 일부 문자는
+               font-size 이상의 추가 높이가 필요한 경우가 있습니다.
+            4. 이를 위해 line-height를 font-size와 딱 맞는 100%로 설정하는 경우는 드뭅니다.
+               일반적으로 line-height는 텍스트를 더 읽기 쉽게 하기 위해 font-size보다 큰 값으로 설정됩니다.
+        */
+        
+        div {
+            font-size: 40px;        /* div 내의 모든 폰트 크기 40px */
+        }
+        .a {
+            background: red;
+            line-height: 100%;       /* 행간을 font-size와 동일하게 40px로 설정 */
+        }
+        .b {
+            background: yellow;
+            line-height: 150%;       /* 행간을 font-size의 150%로 설정, 즉 60px로 설정 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="a">가</div>
+        <div class="b">g</div>
+    </div>
+</body>
+</html>

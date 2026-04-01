@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [grid의 justify-items와 align-items 개별 아이템 정렬] 
+            1. justify-items
+                - 각 아이템을 "가로 방향"으로 정렬합니다.
+                - 열(column) 안에서 위치를 결정합니다.
+            2. 사용값:
+                - start         : 왼쪽 정렬
+                - center        : 가운데 정렬
+                - end           : 오른쪽 정렬
+                - stretch       : 기본값(칸을 가득 채움)
+
+            3. align-items
+                - 각 아이템을 "세로 방향"으로 정렬합니다.
+                - 행(row) 안에서 위치를 결정합니다.
+            4. 사용값:
+                - start         : 위쪽 정렬
+                - center        : 세로 가운데 정렬
+                - end           : 아래쪽 정렬
+                - stretch       : 기본값(칸을 가득 채움)  
+                
+            5. 구조
+                [ 500px 부모 ]
+
+                [ row1 200px ] box (세로 중앙)
+                [ row2 200px ] box (세로 중앙)
+                [ 남는 공간 100px ]
+                
+            6. justify-content / align-content 와의 차이
+
+                justify-content => 그리드 전체 가로 이동
+                align-content   => 그리드 전체 세로 이동
+
+                justify-items   => 개별 가로 정렬
+                align-items     => 개별 세로 정렬
+        */
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-template-rows: 200px 200px;
+            
+            justify-items: center;
+            align-items: center;
+
+            background-color: antiquewhite;
+            height:500px;
+        }        
+        .box { 
+            width:100px; 
+            height:100px; 
+            background:chocolate; 
+            border:1px solid black; 
+
+        }          
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

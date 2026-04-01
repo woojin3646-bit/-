@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [background 덮어쓰기]
+            1. background는 배경 관련 속성의 단축 속성입니다.
+            2. background를 다시 작성하면,
+                기존에 설정된 background 관련 속성들이 모두 초기화됩니다.
+        */
+
+        .box {
+            width: 300px;
+            height: 150px;
+            background-image: url("https://dummyimage.com/100x100/cccccc/000000");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: skyblue;
+
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

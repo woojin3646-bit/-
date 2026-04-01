@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [박스 겉 여백 단축 표현]
+            1. margin 속성은 한 줄로 상하좌우 여백을 설정할 수 있습니다.
+            2. 네 개의 값을 사용할 경우, 시계 방향으로 적용됩니다.
+                위쪽(top) → 오른쪽(right) → 아래쪽(bottom) → 왼쪽(left)
+            3. 이 방식을 사용하면 코드를 더 간단하게 작성할 수 있습니다.
+        */
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+        .box {
+            /* 시계 방향으로 상단 오른쪽 왼쪽 하단 */
+            margin: 100px 8px 32px 64px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <div></div>
+
+    <div class="box"></div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/*
+			[링크 상태에 따른 스타일 변화]
+            1. a태그는 사용자의 행동에 따라 여러 상태를 가집니다.
+            2. CSS에서는 이러한 상태에 따라 다른 스타일을 적용할 수 있습니다.
+            3. 이러한 선택자를 '가상 선택자'라고 하며,
+               지금은 개념만 간단히 확인합니다.
+            4. 링크의 주요 상태
+                (1) :link       : 방문하지 않은 상태(파란색)
+                (2) :visited    : 방문한 상태(보라색)
+                (3) :hover      : 마우스를 올렸을 때(파란색)
+                (4) :active     : 클릭하는 순간(빨간색)
+		*/
+
+        .link:link {
+            color: red;
+        }
+
+        .link:visited {
+            color: green;
+        }
+
+        .link:hover {
+            color: blue;
+        }
+
+        .link:active {
+            color: yellow;
+        }
+	</style>
+</head>
+<body>
+	<a href="https://www.naver.com" target="_blank">원본</a>
+
+	<br>
+
+	<a class="link" href="https://www.google.com" target="_blank">디자인 적용</a>
+</body>
+</html>

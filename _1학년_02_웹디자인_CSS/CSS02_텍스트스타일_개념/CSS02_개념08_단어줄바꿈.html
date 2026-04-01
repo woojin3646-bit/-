@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [단어 줄바꿈]
+            1. 텍스트가 한 줄에 모두 들어가지 않으면
+               브라우저는 자동으로 줄바꿈을 수행합니다.
+            2. 이때 줄바꿈 기준은 언어에 따라 다릅니다.
+               - 영문(English) : 단어(공백) 기준 줄바꿈
+               - 한글(Korean)  : 문자 기준 줄바꿈
+            3. word-break 속성을 사용하면
+               줄을 어디에서 끊을지 제어할 수 있습니다.
+            4. word-break 속성 값
+               (1) keep-all
+                   - 단어를 기준으로 줄바꿈
+                   - 한글 문장이 자연스럽게 줄바꿈됨
+               (2) break-all
+                   - 문자를 기준으로 줄바꿈
+                   - 글자가 중간에서 끊어질 수 있음
+        */     
+        
+        .keep {
+            word-break: keep-all;   /* 단어 기준 줄바꿈 */
+        }    
+        .break {
+            word-break: break-all;  /* 문자 기준 줄바꿈 */
+        }  
+    </style>
+</head>
+<body>
+    <div>
+        <h3>[기본 줄바꿈]</h3>
+        한글 문자는 하나하나 줄바꿈이 되어서 웹 페이지의 가독성과 전체적인 디자인 완성도가
+        눈에 띄게 떨어질 수 있으며 특히 설명 문장이나 안내 문구가 길어질수록 그 문제가
+        더욱 두드러지게 나타나는 경우가 많습니다.
+        <br><br>
+        On the other hand, in English, line breaks are generally applied based on spaces between words,
+        which helps maintain readability even when the browser window becomes narrower and narrower.
+    </div>
+
+    <div class="keep">
+        <h3>[word-break: keep-all]</h3>
+        한글 문자는 하나하나 줄바꿈이 되어서 웹 페이지의 가독성과 전체적인 디자인 완성도가
+        눈에 띄게 떨어질 수 있으며 특히 설명 문장이나 안내 문구가 길어질수록 그 문제가
+        더욱 두드러지게 나타나는 경우가 많습니다.
+        <br><br>
+        On the other hand, in English, line breaks are generally applied based on spaces between words,
+        which helps maintain readability even when the browser window becomes narrower and narrower.
+    </div>
+
+    <div class="break">
+        <h3>[word-break: break-all]</h3>
+        한글 문자는 하나하나 줄바꿈이 되어서 웹 페이지의 가독성과 전체적인 디자인 완성도가
+        눈에 띄게 떨어질 수 있으며 특히 설명 문장이나 안내 문구가 길어질수록 그 문제가
+        더욱 두드러지게 나타나는 경우가 많습니다.
+        <br><br>
+        On the other hand, in English, line breaks are generally applied based on spaces between words,
+        which helps maintain readability even when the browser window becomes narrower and narrower.
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [grid의 align-content : 그리드 전체 세로 이동] 
+            1. align-content는
+                "그리드 전체 영역"을 세로 방향으로 정렬하는 속성입니다.  
+            2. 개별 아이템을 움직이는 것이 아니라
+                여러 행(row)으로 구성된
+                그리드 전체 묶음을 이동시킵니다.
+            3. 현재 예제에서
+                - grid-template-columns: 150px 150px 150px;
+                - 3열이 만들어집니다.
+                - 아이템이 4개이므로 2행(row)이 생성됩니다.
+            4. 부모의 높이(height: 500px)가
+                실제 그리드 높이보다 크기 때문에
+                세로 방향으로 남는 공간이 생깁니다.
+            5. align-content: center;
+                남는 세로 공간 안에서
+                그리드 전체를 가운데로 이동합니다.
+            
+            6. 정리
+                justify-content → 그리드 전체 가로 이동
+                align-content   → 그리드 전체 세로 이동
+                (남는 공간이 있어야 효과가 보입니다.)                
+        */
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+            align-content: center;
+
+            background-color: antiquewhite;
+            height:500px;
+        }        
+        .box { 
+            width:100px; 
+            height:100px; 
+            background:chocolate; 
+            border:1px solid black; 
+
+        }          
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

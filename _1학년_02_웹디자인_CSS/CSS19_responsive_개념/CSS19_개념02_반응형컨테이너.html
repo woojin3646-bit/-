@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [반응형 컨테이너]
+            1. width:100% + max-width
+            2. 큰 화면에서는 콘텐츠가 너무 넓어지면 읽기 불편해질 수 있습니다.
+                그래서 "최대 폭"을 제한하는 컨테이너를 자주 사용합니다.
+            3. 컨테이너란,
+                콘텐츠의 폭을 조절하고
+                가운데 정렬을 하기 위한 레이아웃 기본 틀 입니다.
+            4. width: 100%
+                - 작은 화면에서는 화면 크기에 맞춰 줄어듭니다.
+            5. max-width: 700px
+                - 큰 화면에서는 700px 이상으로 커지지 않게 제한합니다.
+            6. margin: 0 auto
+                - 남는 좌우 공간을 동일하게 만들어 가운데 정렬합니다.
+        */
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+
+            background-color: antiquewhite;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>반응형 컨테이너 width:100% + max-width</h3>
+        
+        중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠
+        중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠        
+    </div>
+</body>
+</html>

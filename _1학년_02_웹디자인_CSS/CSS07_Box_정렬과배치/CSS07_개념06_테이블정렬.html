@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [텍스트 정렬]
+            1. 테이블 셀(td/th) 안의 내용은 정렬 속성으로 위치를 조절할 수 있습니다.
+            2. 가로 정렬 : text-align (left/center/right)
+            3. 세로 정렬 : vertical-align (top/middle/bottom)
+        */
+
+        table {
+            width: 360px;
+            height: 150px;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>상태</th>
+        </tr>
+        <tr>
+            <td>김철수</td>
+            <td>수강중</td>
+        </tr>
+        <tr>
+            <td>김영희</td>
+            <td>완료</td>
+        </tr>        
+    </table>
+</body>
+</html>

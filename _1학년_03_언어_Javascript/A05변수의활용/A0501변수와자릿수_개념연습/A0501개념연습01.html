@@ -1,0 +1,26 @@
+<script>
+    /*
+        [문제]
+        7951의 각 자릿수를 분리하여 천의 자릿수, 백의 자릿수, 십의 자릿수, 일의 자릿수를 출력하시오.
+    */
+
+    /*
+        [출력예시]
+        7
+        9
+        5
+        1        
+    */
+
+    let a = 7951;
+
+    let b = Math.floor(a / 1000);
+    let c = Math.floor(a % 1000 / 100);
+    let d = Math.floor(a % 100 / 10);
+    let e = a % 10
+
+    document.write(b, "<br>");
+    document.write(c, "<br>");
+    document.write(d, "<br>");
+    document.write(e, "<br>");
+</script>

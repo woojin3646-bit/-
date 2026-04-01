@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /*
+            [텍스트 정렬]
+            1. text-align 속성은 텍스트의 정렬 방식을 설정합니다.
+            2. 기본적으로 텍스트는 왼쪽 정렬되어 있습니다.
+            3. text-align 속성 값
+                (1) left : 왼쪽 정렬 (기본값)
+                (2) center : 중앙 정렬
+                (3) right : 오른쪽 정렬
+            4. text-align은 텍스트를 정렬하는 속성으로,
+                블록 요소 내부의 글자 정렬에 영향을 줍니다.
+            5. 반면 인라인 요소(span 등)에 직접 적용해도
+                정렬 효과가 나타나지 않습니다.
+                이는 이후 단원에서 설명합니다.
+        */
+        .left {
+            text-align: left;       /* 텍스트를 왼쪽으로 정렬 (기본값) */
+        }
+
+        .center {
+            text-align: center;     /* 텍스트를 중앙으로 정렬 */
+        }
+
+        .right {
+            text-align: right;      /* 텍스트를 오른쪽으로 정렬 */
+        }
+      
+        span {
+            text-align: center;     /* 인라인 요소인 span에는 직접 적용되지 않음 */
+        }
+    </style>
+</head>
+<body>
+    <h2 class="left">왼쪽 정렬 (기본)</h2>
+    <h2 class="center">가운데 정렬</h2>
+    <h2 class="right">오른쪽 정렬</h2>
+
+    <hr>
+
+    <span>span 태그는 중앙 정렬되지 않습니다.</span>
+</body>
+</html>

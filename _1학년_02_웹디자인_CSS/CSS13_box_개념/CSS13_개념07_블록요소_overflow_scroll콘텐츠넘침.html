@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [overflow: scroll 콘텐츠 넘침]
+            1. overflow : scroll
+                - 콘텐츠가 부모 영역을 넘치면 스크롤이 생깁니다.
+                - 콘텐츠가 넘치지 않아도 항상 스크롤을 표시합니다.
+            2. 현재 예제
+                - 부모: 200px x 200px
+                - 자식: 300px x 300px
+                - 가로/세로 모두 넘치므로 스크롤이 표시됩니다.     
+        */
+
+        .parent {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            
+            overflow: scroll; 
+        }
+
+        .child {
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            자식 요소<br>
+            가로도 넘치고<br>
+            세로도 넘친다.<br>
+            무조건 스코롤이 생긴다.
+        </div>
+    </div>
+</body>
+</html>

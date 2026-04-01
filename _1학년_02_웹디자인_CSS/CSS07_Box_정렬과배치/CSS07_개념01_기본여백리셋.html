@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [기본 여백 리셋]
+            1. 브라우저는 태그마다 기본 margin/padding 값을 가지고 있습니다.
+            2. 레이아웃을 정확히 맞추기 위해 기본 여백을 제거하고 시작하는 경우가 많습니다.
+            3. 초급 단계에서는 body와 자주 쓰는 태그(h1, ul 등)부터 리셋하는 방식으로 이해합니다.
+        */
+
+        body, h1, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+        h1 {
+            background-color: aquamarine;
+            padding: 12px;
+        }
+        p {
+            background-color: beige;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>기본 여백을 제거했습니다.</h1>
+    <p>이제 화면 가장자리부터 정확히 배치할 수 있습니다.</p>
+</body>
+</html>

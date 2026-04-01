@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            [전체 선택자]
+            1. 전체 선택자는 문서 안에 있는 모든 HTML 요소를 한 번에 선택합니다.
+            2. 태그 이름, 클래스, 아이디와 관계없이
+                모든 요소에 동일한 스타일을 적용할 수 있습니다.
+            3. 눈에 보이지 않는 요소라도
+                실제로 HTML 구조 안에 존재하면 모두 적용 대상이 됩니다.
+            4. 전체 선택자는 스타일을 빠르게 확인하거나
+                기본 스타일을 초기화할 때 자주 사용됩니다.
+         */
+
+        * {
+            font-size: 20px;
+            color: blueviolet;
+        }        
+    </style>
+</head>
+<body>
+    
+    <div>div 태그에 적용된 스타일</div>
+    <h1>h1 태그에 적용된 스타일</h1>
+    
+    일반 텍스트에도 적용된 스타일
+    
+    <input type="text" placeholder="input 태그에도 적용됩니다.">    
+
+</body>
+</html>

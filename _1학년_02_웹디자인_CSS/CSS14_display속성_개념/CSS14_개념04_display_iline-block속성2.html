@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [display: inline-block]
+            1. div 요소는 기본적으로 block 요소입니다.
+            2. display: inline-block으로 변경하면
+                줄바꿈이 발생하지 않고 가로로 배치됩니다.
+            3. 동시에 width, height를 그대로 사용할 수 있습니다.
+            
+        */
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .before {
+            background-color: red;
+        }
+        .after {
+            display: inline-block;
+
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box before">block</div>
+    <div class="box before">block</div>
+
+    <hr>
+
+    <div class="box after">inline-block</div>
+    <div class="box after">inline-block</div>
+</body>
+</html>

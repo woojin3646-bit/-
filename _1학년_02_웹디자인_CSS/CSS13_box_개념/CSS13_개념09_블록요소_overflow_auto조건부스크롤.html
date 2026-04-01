@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [overflow: auto 조건부 스크롤]
+            1. overflow: auto
+                - 콘텐츠가 부모 영역을 벗어나면 자동으로 스크롤을 생성합니다.
+                - 콘텐츠가 넘치지 않으면 스크롤을 표시하지 않습니다.
+            2. 현재 예제 비교
+            (1) 첫 번째 parent
+                - 부모: 200px × 200px
+                - 자식: 300px × 300px
+                - 가로/세로 모두 넘침
+                - 자동으로 스크롤 생성
+
+            (2) 두 번째 parent
+                - 부모: 200px × 200px
+                - 자식: 100px × 100px
+                - 넘치지 않음
+                - 스크롤 생성되지 않음                
+        */
+
+        .parent {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            margin-bottom: 50px;
+            
+            overflow: auto; 
+        }
+
+        .child {
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+        }
+        .child2 {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            자식 요소<br>
+            가로도 넘치고<br>
+            세로도 넘친다.<br>
+            무조건 스코롤이 생긴다.
+        </div>
+    </div>
+
+    <div class="parent">
+        <div class="child2">
+            자식 요소<br>
+            가로도 넘치지 않고<br>
+            세로도 넘치지 않는다.<br>
+            무조건 스코롤이 생긴다.
+        </div>
+    </div>    
+</body>
+</html>

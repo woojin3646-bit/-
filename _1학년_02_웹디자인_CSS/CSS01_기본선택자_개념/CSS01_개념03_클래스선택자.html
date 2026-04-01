@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [클래스 선택자]
+            1. 클래스 선택자는 class 속성에 지정된 값을 기준으로
+               원하는 요소에만 스타일을 적용할 수 있는 선택자입니다.
+            2. 클래스 선택자 이름 앞에 점(.)을 붙여서 작성합니다.
+            3. 같은 태그라도 class 값이 다르면
+               서로 다른 스타일을 적용할 수 있습니다.
+        */
+        
+        .type1 {
+            color: red;     /* class가 type1인 요소의 글자색을 빨간색으로 설정 */
+        }
+        .type2 {
+            color: green;
+        }
+        .type3 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 같은 h1 태그이지만,
+        class 값에 따라 서로 다른 스타일이 적용됨 -->
+    <h1 class="type1">class가 type1인 헤딩입니다.</h1>
+    <h1 class="type1">class가 type1인 헤딩입니다.</h1>
+    <h1 class="type1">class가 type1인 헤딩입니다.</h1>
+    <h1 class="type2">class가 type2인 헤딩입니다.</h1>
+    <h1 class="type3">class가 type3인 헤딩입니다.</h1>
+</body>
+</html>

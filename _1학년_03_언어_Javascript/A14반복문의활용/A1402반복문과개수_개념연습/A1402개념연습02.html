@@ -1,0 +1,23 @@
+<script>
+    /*
+        [문제]
+        반복문을 사용하여 18의 약수를 찾고,
+        그 중 짝수인 약수의 개수를 출력하시오.
+    */
+    /*
+        [출력예시]
+        2 6 18 
+        3
+    */
+    let count = 0;
+    let num = 18;
+    for(let i = 1; i < 19; i++){
+        if(num % i == 0 && i % 2 == 0){
+            document.write(i + " ");
+            count += 1;
+        }
+    }
+    document.write("<br/>");
+    document.write(count);
+    
+</script>

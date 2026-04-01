@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [HSL 색상 표현]
+            1. HSL은 색상을 사람이 이해하기 쉬운 방식으로 표현합니다.
+            2. 형식 : hsl(H, S, L)
+                - H(Hue, 색상)          : 0~360 (0=빨강, 120=초록, 240=파랑)
+                - S(Saturation, 채도)   : 0~100 (0%는 회색, 100%는 선명)
+                - L(Lightness, 밝기)    : 0~100 (0%는 검정, 50%는 기본, 100% 흰색)
+            3. HSL은 밝기(L)나 채도(S)를 조절할 때 직관적입니다.
+        */    
+            
+        .hsl-red {
+            background-color: hsl(0, 100%, 50%);
+        }
+        .hsl-green {
+            background-color: hsl(120, 100%, 50%);
+        }
+        .hsl-blue {
+            background-color: hsl(240, 100%, 50%);
+        }
+    </style>
+</head>
+<body>
+    <h3 class="hsl-red">background-color: hsl(0, 100%, 50%);</h3>
+    <h3 class="hsl-green">background-color: hsl(120, 100%, 50%);</h3>
+    <h3 class="hsl-blue">background-color: hsl(240, 100%, 50%);</h3>
+</body>
+</html>

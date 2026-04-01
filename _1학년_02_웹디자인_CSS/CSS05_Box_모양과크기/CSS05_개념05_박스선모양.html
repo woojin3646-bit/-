@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [박스 선 모양]
+            1. border-style 속성은 박스 테두리의 모양을 지정하는 속성입니다.
+            2. border-style 속성 값
+                - solid: 실선
+                - dashed: 점선
+                - dotted: 점으로 이루어진 선
+                - double: 이중 실선
+                - groove: 파인 것처럼 보이는 효과
+                - ridge: 튀어나온 것처럼 보이는 효과
+                - inset: 요소가 안쪽으로 들어간 것처럼 보이는 효과
+                - outset: 요소가 바깥으로 튀어나온 것처럼 보이는 효과
+        */
+                
+        div {
+            width: 70px;
+            height: 70px;
+            border-width: 5px;
+            border-color: red;
+        }
+        .box1 { border-style: solid; }
+        .box2 { border-style: dashed; }
+        .box3 { border-style: dotted; }
+        .box4 { border-style: double; }
+        .box5 { border-style: groove; }
+        .box6 { border-style: ridge; }
+        .box7 { border-style: inset; }
+        .box8 { border-style: outset; }
+    </style>
+</head>
+<body>
+    <span>solid</span>
+    <div class="box1"></div>
+
+    <span>dashed</span>
+    <div class="box2"></div>
+
+    <span>dotted</span>
+    <div class="box3"></div>
+
+    <span>double</span>
+    <div class="box4"></div>
+
+    <span>groove</span>
+    <div class="box5"></div>
+
+    <span>ridge</span>
+    <div class="box6"></div>
+
+    <span>inset</span>
+    <div class="box7"></div>
+
+    <span>outset</span>
+    <div class="box8"></div>
+</body>
+</html>

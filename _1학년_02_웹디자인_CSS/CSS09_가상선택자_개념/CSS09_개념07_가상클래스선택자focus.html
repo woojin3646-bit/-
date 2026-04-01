@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            [가상 클래스 선택지 :focus]
+            1. :focus 는 사용자가 요소를 클릭하거나 Tab 키로 이동했을 때 적용됩니다.
+            2. input 요소는 포커스를 가장 쉽게 확인할 수 있는 대표적인 예입니다.
+            3. 포커스가 되면 기본적으로 outline 이 표시됩니다.
+            4. outline: none; 은 기본 표시를 제거하는 것이며,
+                대신 다른 시각적 표시를 반드시 함께 제공해야 합니다.
+        */
+
+        input:focus {
+            background-color: lightblue;
+            border-color: blue;
+            outline: none;      /* 아웃라인 제거 */
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" placeholder="아이디를 입력하세요">
+    <input type="password" placeholder="비밀번호를 입력하세요">
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [박스 속 여백 단축 표현]
+            1. padding에 입력하는 값의 개수에 따라 적용 방식이 달라집니다.
+            2. 값 1개
+                - 모든 방향(상, 우, 하, 좌)에 동일하게 적용
+            3. 값 2개
+                - 첫 번째 값 : 상 + 하
+                - 두 번째 값 : 좌 + 우
+            4. 값 3개
+                - 첫 번째 값 : 위
+                - 두 번째 값 : 좌 + 우
+                - 세 번째 값 : 아래
+            5. 값 4개
+                - 시계 방향으로 적용
+                - 위 → 오른쪽 → 아래 → 왼쪽
+        */
+
+        div {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .box1 {
+            padding: 20px;
+            background-color: lightcoral;
+        }
+        .box2 {
+            padding: 40px 10px;
+            background-color: lightgreen;
+        }
+        .box3 {
+            padding: 10px 30px 50px;
+            background-color: lightblue;
+        }
+        .box4 {
+            padding: 10px 20px 30px 40px;
+            background-color: plum;
+        }    
+    </style>
+</head>
+<body>
+
+    <div class="box1">1개 값</div>
+    <div class="box2">2개 값</div>
+    <div class="box3">3개 값</div>
+    <div class="box4">4개 값</div>
+
+</body>
+</html>

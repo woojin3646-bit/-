@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [인접 형제 결합자 중간 요소 있을 때]
+            1. 인접 형제 결합자는 선택자1과 선택자2 사이에 다른 요소가 있으면
+                스타일이 적용되지 않습니다.
+            2. 첫 번째 구조에서는 a 요소와 b 요소 사이에 span 요소가 존재합니다.
+            3. 인접 형제 결합자는 "바로 뒤" 요소만 선택하므로,
+                span이 끼어 있는 경우 b 요소는 선택되지 않습니다.
+            4. 두 번째 구조에서는 a 요소 바로 뒤에 b 요소가 위치하므로,
+                b 요소에 스타일이 적용됩니다.
+        */
+
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid blue;
+            margin-bottom: 10px;
+        }
+
+        .a + .b {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a box">a 클래스</div>
+    <span>껴있는 span</span>
+    <div class="b box">b 클래스</div>
+
+    <hr>
+
+    <div class="a box">a 클래스</div>
+    <div class="b box">b 클래스</div>
+    
+</body>
+</html>

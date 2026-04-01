@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [max-height와 overflow]
+            1. max-height
+                - 요소의 최대 높이를 제한합니다.
+                - 콘텐츠가 많아도 일정 높이 이상 커지지 않습니다.
+            2. overflow
+                - 요소를 넘는 콘텐츠를 어떻게 처리할지 결정합니다.
+            3. 값
+                - overflow: visible     (기본값, 밖으로 넘침)
+                - overflow: hidden      (넘치는 부분 잘라냄)     
+                - overflow: auto        (필요 시 스크롤 생성)
+        */
+
+        .box {
+            background-color: antiquewhite;
+            border: 1px solid #999;
+            margin-bottom: 20px;
+        }
+        .basic {
+            max-height: 60px;
+        }
+        .hidden {
+            max-height: 60px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h3>max-height만 적용 (넘침 발생)</h3>
+    <div class="box basic">
+        중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠
+        중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠
+        중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠
+    </div>
+
+    <h3>max-height + overflow:hidden</h3>
+    <div class="box hidden">
+        중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠
+        중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠
+        중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠 중간 콘텐츠
+    </div>    
+</body>
+</html>

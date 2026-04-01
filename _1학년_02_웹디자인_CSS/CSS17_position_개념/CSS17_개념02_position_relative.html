@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [position: relative]
+            1. 요소가 원래 있던 자리를 기준으로 이동합니다.
+            2. top/left/right/bottom으로 위치를 이동할 수 있습니다.
+            3. relative는 이동해도 "원래 차지하던 공간(자리)"은 그대로 남아 있어
+                다른 요소가 그 자리를 채우지 않습니다.
+            4. 이동 기준은 "자기 자신이 원래 있던 위치" 입니다.
+        */
+        
+        .pos {
+            position: relative;
+            top: -40px;     /* 위로 40px 이동 */
+            left: 40px;     /* 오른쪽으로 40px 이동 */
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .a {
+            background-color: antiquewhite;
+        }
+        .b {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="box a">고정Box</div>
+    <div class="box b pos">이동Box</div>
+</body>
+</html>

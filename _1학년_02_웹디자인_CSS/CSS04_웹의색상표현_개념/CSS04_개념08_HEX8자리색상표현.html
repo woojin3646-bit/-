@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [HEX 8자리 색상 표현]
+            1. HEX 코드는 8자리로도 작성할 수 있습니다.
+            2. 형식: #RRGGBBAA
+                - 앞 6자리(RRGGBB)  : 색상
+                - 뒤 2자리(AA)      : 투명도(알파)
+            3. 투명도 예)
+                - 00    : 완전 투명
+                - FF    : 완전 불투명
+            4. 예)
+                - #FF0000FF     : 빨강(불투명)
+                - #FF000066     : 빨강(반투명)
+        */    
+            
+        .hex_ff {
+            background-color: #FF0000FF;
+        }
+        .hex_88 {
+            background-color: #FF000088;
+        }
+        .hex_44 {
+            background-color: #FF000044;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="hex_ff">background-color: #FF0000FF;</h3>
+    <h3 class="hex_88">background-color: #FF000088;</h3>
+    <h3 class="hex_44">background-color: #FF000044;</h3>
+</body>
+</html>

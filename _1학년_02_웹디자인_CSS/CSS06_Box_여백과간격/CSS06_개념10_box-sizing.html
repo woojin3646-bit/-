@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [box-sizing]
+            1. 앞선 예제에서 확인했듯이,
+                width와 height를 동일하게 설정하더라도
+                padding과 border로 인해 실제 크기는 달라질 수 있습니다.
+            2. 이러한 크기 차이는 여러 요소를 나란히 배치하거나
+                레이아웃을 구성할 대 불편함을 만들 수 있습니다.
+            3. box-sizing 속성은 요소의 크기를 계산하는 방식을 지정합니다.
+            4. box-sizing 속성 값
+                (1) content-box (기본값)
+                    - width와 height는 콘텐츠 영역만을 의미하며,
+                    padding과 border는 크기에 추가됩니다.
+                (2) border-box
+                    - width와 height에 padding과 border를 포함하여
+                    요소의 전체 크기를 계산합니다.
+            5. box-sizing: border-box; 를 사용하면
+                padding과 border가 있어도 요소의 전체 크기가 유지되어
+                더 직관적인 레이아웃을 만들 수 있습니다.
+        */
+
+        /* 모든 요소에 동일한 크기 계산 방식 적용 */
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: aquamarine;
+            margin-bottom: 20px;
+
+            border: 3px solid blue;
+        }
+
+        .box {
+            padding: 16px;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        padding 없음
+    </div>
+   
+    <div class="box">
+        padding 있음
+    </div>
+
+</body>
+</html>

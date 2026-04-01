@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [position: fixed 화면 고정]
+            1. fixed는 현재 화면을 기준으로 고정됩니다.
+            2. 스크롤을 내려도 화면에서 위치가 유지됩니다.
+            3. 주로 상단 고정 메뉴, 플로팅 버튼 등에 사용됩니다.
+        */
+
+        .pos {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+        .longbox {
+            width: 300px;
+            height: 1500px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="longbox">큰 사각형</div>
+    <div class="box pos">고정 사각형</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [선택자 우선순위 종합 연습]
+            1. CSS에는 스타일 적용 우선순위가 존재합니다.
+            2. 선택자 우선순위는 아래 순서로 적용됩니다.
+               ① 인라인 스타일
+               ② 아이디 선택자 (#id)
+               ③ 클래스 선택자 (.class)
+               ④ 태그 선택자 (tag)
+            3. 하나의 요소에 여러 선택자가 동시에 적용될 경우,
+               우선순위가 가장 높은 선택자의 스타일이 최종 적용됩니다.
+            4. 아래 예제에서는 div 태그에 태그, 클래스(2개), 아이디 선택자가
+               모두 적용되어 있지만,
+               아이디 선택자가 가장 높은 우선순위를 가지므로
+               빨간색이 최종 적용됩니다.
+        */
+
+        div {
+            color: black;
+        }
+
+        .special {
+            color: green;
+        }
+
+        .highlight {
+            color: yellow;
+        }
+
+        #unique {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="unique" class="highlight special">
+        이 텍스트는 빨간색입니다.
+    </div>
+
+</body>
+</html>

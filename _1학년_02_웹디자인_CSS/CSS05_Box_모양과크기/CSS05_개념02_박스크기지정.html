@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [박스 크기 지정]
+            1. HTML의 블록 요소는 하나의 박스(Box)처럼 동작합니다.
+            2. 박스에는 가로 크기(width)와 세로 크기(height)가 있습니다.
+            3. width    : 박스의 가로 크기를 지정하는 속성입니다.
+            4. height   : 박스의 세로 크기를 지정하는 속성입니다.
+            5. 크기를 지정하지 않으면,
+                - 가로 크기(width)는 기본적으로 넓게 늘어납니다.
+                - 세로 크기(height)는 내용만큼만 커집니다.
+        */
+        .box1 {
+            background-color: beige;
+        }
+        .box2 {
+            background-color: aquamarine;
+            width: 200px;
+        }
+        .box3 {
+            background-color: antiquewhite;
+            width: 200px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        기본 크기 (width, height 미지정)
+    </div>
+
+    <div class="box2">
+        width: 200px
+    </div>
+
+    <div class="box3">
+        width: 200px<br>
+        height: 80px
+    </div>
+</body>
+</html>

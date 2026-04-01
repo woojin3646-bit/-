@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [자식 결합자]
+            1. 자식 결합자는 부모 요소의 "직계 자식" 요소만 선택합니다.
+            2. 구문: 선택자1 > 선택자2
+            3. 선택자1 바로 아래에 있는 선택자2만 적용됩니다.
+            4. 손자 요소(하위에 중첩된 요소)는 선택되지 않습니다.
+        */
+
+        .parent > p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1. parent 클래스를 가진 div의 직계 자식 p 요소는
+            자식 결합자(>)에 의해 선택됩니다.
+        2. div 안에 중첩된 또 다른 div 내부의 p 요소는
+            직계 자식이 아니므로 스타일이 적용되지 않습니다.
+    -->
+
+    <div class="parent">
+        <p>이 문장은 굵게 표시됩니다.</p>
+        <div>
+            <p>이 문장은 영향을 받지 않습니다.</p>
+        </div>
+    </div>
+</body>
+</html>

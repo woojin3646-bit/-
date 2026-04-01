@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [리스트 기호 변경 ol]
+            1. list-style-type 속성으로 
+               <ul>, <ol>의 기호(불릿/번호) 형태를 바꿀 수 있습니다.
+            2. list-style-type <ol>에서 자주 사용하는 속성 값
+                - decimal: 1, 2, 3, ... (기본값)
+                - lower-alpha: a, b, c, ...
+                - upper-alpha: A, B, C, ...
+                - lower-roman: i, ii, iii, ...
+                - upper-roman: I, II, III, ...                    
+        */
+
+        .alpha {            
+            list-style-type: upper-alpha;    
+        }     
+    </style>
+</head>
+<body>
+    <h2>알파벳 번호로 변경</h2>
+
+    <ol class="alpha">
+        <li>첫 번째</li>
+        <li>두 번째</li>
+        <li>세 번째</li>
+    </ol>  
+</body>
+</html>

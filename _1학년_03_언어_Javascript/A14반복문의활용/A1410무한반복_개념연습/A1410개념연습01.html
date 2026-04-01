@@ -1,0 +1,25 @@
+<script>
+    /*
+        [문제]
+        28의 배수 중 500 이상인 수들 중에서 가장 작은 수를 출력하시오.
+    */
+    /*
+        [출력예시]
+        504
+    */
+   
+    let num = 28;
+    let count = 0;
+    let i = num;
+    let loop = true;
+    while(loop){
+        if(i >= 500){
+            count += 1;
+            if(count == 1){
+                document.write(i + "<br/>");
+                loop = false;
+            }
+        }
+        i += num;
+    }
+</script>

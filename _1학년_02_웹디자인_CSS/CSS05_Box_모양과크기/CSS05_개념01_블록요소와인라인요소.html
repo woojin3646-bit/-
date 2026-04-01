@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [블록 요소와 인라인 요소]
+            1. HTML 요소는 크게 블록 요소와 인라인 요소로 나뉩니다.
+            2. 블록 요소의 특징
+                - 한 줄 전체를 차지합니다.
+                - 다음 요소는 자동으로 줄 바뀝니다.
+                - width, height 같은 박스 속성을 적용할 수 있습니다.
+                - 예: h1, div, p
+            3. 인라인 요소의 특징
+                - 자신의 내용만큼만 공간을 차지합니다.
+                - 줄 바꿈이 발생하지 않습니다.
+                - width, height 속성이 적용되지 않습니다.
+                - 예: span, a, strong
+            4. 이후 예제에서는
+               블록 요소를 기준으로 박스(Box) 스타일을 자세히 살펴봅니다.
+        */
+
+        h1 {
+            background: beige;
+        }
+        span {
+            background: lightcoral;
+        }        
+    </style>
+</head>
+<body>
+    <h1>나는 블록 요소입니다 (한 줄 전체 차지)</h1>
+    <h1>나도 블록 요소라서 자동으로 줄이 바뀝니다</h1>
+    
+    <p>
+        이 문장 안에서
+        <span>이 부분은 인라인 요소</span>
+        이기 때문에 줄 안에 함께 배치됩니다.
+    </p>
+    
+    <p>
+        <span>인라인 요소</span>
+        <span>는</span>
+        <span>여러 개가</span>
+        <span>같은 줄에</span>
+        <span>나옵니다.</span>
+    </p>    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [블록 요소의 기본 값 - width: auto]
+            1. 블록 요소의 기본 width 값은 auto 입니다.
+            2. width: auto는
+                부모의 가로 공간을 전부 차지한다는 의미입니다.
+            3. 즉, 가로는 부모 기준으로 자동 확장됩니다.
+            4. 정리하면,
+                width: auto     => 부모 기준
+                height: auto    => 콘텐츠 기준
+        */
+
+        .parent {
+            background-color: yellow;
+            width: 100px;
+            height: 200px;
+        }
+        .box {
+            background: yellowgreen;
+
+            width: auto;
+            height: 100px;
+        }        
+    </style>    
+</head>
+<body>
+    <!-- 부모(body)의 너비를 따름 -->
+    <div class="box"></div>
+
+    <hr>
+    
+    <!-- 부모(parent)의 너비를 따름: 100px -->
+    <div class="parent">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

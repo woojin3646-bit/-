@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [background-image]
+            1. background-image는 요소의 배경에 이미지를 삽입하는 속성입니다.
+            2. 글자나 콘텐츠 뒤에 이미지가 깔리는 구조입니다.
+            3. 기본문법
+                background-image: url("이미지 경로");
+            4. url() 의미
+                - url() 안에는 이미지의 경로를 작성합니다.
+                - 외부 이미지 주소(https://~) 또는 내부 파일 경로(images/a.jpg) 모두 가능합니다.
+            5. 배경 이미지는 기본적으로 반복(repeat) 됩니다.
+        */
+
+        .repeat {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+
+            background-image: url("https://dummyimage.com/200x60/cccccc/000000");
+        }
+        .no-repeat {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+
+            background-image: url("https://dummyimage.com/200x60/cccccc/000000");
+
+            /* 이미지 반복 없애기 */
+            background-repeat: no-repeat;            
+        }
+    </style>
+</head>
+<body>
+    <div class="repeat"></div>
+    <div class="no-repeat"></div>
+</body>
+</html>

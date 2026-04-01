@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [position: fixed 팝업]
+            1. fixed를 사용하면 
+                화면 특정 위치에 팝업을 고정할 수 있습니다.
+            2. top/left를 %로 주면 화면 기준 비율 위치에 배치됩니다.
+            3. 팝업 내부 콘텐츠가 길면
+                overflow-y:auto로 팝업 내부에 스크롤을 만들 수 있습니다.
+        */
+
+        .longbox {
+            width: 300px;
+            height: 1500px;
+            background-color: aquamarine;
+        }        
+        .popup {
+            position: fixed;
+            top: 40%;
+            left: 40%;
+            overflow-y: auto;
+
+            width: 150px;
+            height: 200px;
+            background-color: aliceblue;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="longbox">큰 사각형</div>
+    <div class="popup">
+        <h3>작은 팝업</h3>
+        팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용
+        팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용
+    </div>
+</body>
+</html>

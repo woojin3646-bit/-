@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [grid-template-rows 기본]   
+            1. display: grid; 를 적용하면
+                자식 요소는 격자(칸)로 배치됩니다.
+            2. grid-template-rows 는
+                행(row)의 개수와 높이를 결정합니다.            
+            3. 값의 개수 = 행의 개수입니다.
+                100px 100px => 3행 생성  
+            4. 2행 2열 구조(4칸)를 먼저 채웁니다.
+                아이템이 더 많으면
+                다음 행이 자동으로 생성됩니다.
+            5. grid-template-rows는
+                값 개수 = 생성 개수 원리는 grid-template-columns와 같고,
+                방향만 행(세로) 입니다.
+        */
+
+        .grid {
+            display: grid;
+            grid-template-columns: 100px 100px;     /* 2열 */
+            grid-template-rows: 150px 150px;        /* 2행 */
+
+            background-color: antiquewhite;
+            height:500px;
+        }        
+        .box { 
+            width:80px; 
+            height:80px; 
+            background:chocolate; 
+            border:1px solid black; 
+
+        }           
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>    
+</body>
+</html>

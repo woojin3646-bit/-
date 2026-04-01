@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [transform: rotate 기본]
+            1. transform: rotate(각도)
+                - 요소를 회전시킵니다.
+                - 보통 deg(각도)를 가장 많이 사용합니다.
+            2. deg 범위
+                - 0deg ~ 350deg (음수도 가능)
+                - 양수(deg)는 시계 방향(오른쪽 회전)
+                - 음수(deg)는 반시계 방향(왼쪽 회전)
+                - rotate(45deg) : 45도 회전
+        */
+
+        .box {
+            width: 120px;
+            height: 120px;
+            font-weight: bold;
+        }
+        .r1 {
+            background-color: antiquewhite;
+            transform: rotate(20deg);
+        }
+        .r2 {
+            background-color: aqua;
+            transform: rotate(-20deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box r1">20deg</div>
+    <div class="box r2">-20deg</div>
+</body>
+</html>

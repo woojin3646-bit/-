@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [overflow: hidden]
+            1. 부모 영역을 벗어난 콘텐츠를 화면에 표시하지 않습니다.
+            2. 넘치는 부분은 잘려서 보이지 않습니다.
+        */
+
+        .parent {
+            width: 200px;
+            height: 40px;
+            background-color: blueviolet;
+            
+            overflow: hidden;    
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            [가상 클래스 선택자 :enabled]
+            1. :enabled 는 사용 가능한 상태의 폼 요소를 선택합니다.
+            2. disabled 속성이 없는 input, button 요소는 기본적으로 enabled 상태입니다.
+            3. :disabled 와 반대되는 개념입니다.
+        */
+
+        input:enabled {
+            background-color: aquamarine;
+        }
+        button:enabled {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" placeholder="활성화된 입력창입니다.">
+    <br>
+    <button>활성화된 버튼</button>
+    
+</body>
+</html>

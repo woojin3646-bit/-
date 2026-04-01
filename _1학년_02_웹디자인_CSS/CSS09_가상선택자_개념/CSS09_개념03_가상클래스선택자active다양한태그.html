@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            [가상 클래스 선택자 :active 다양한 태그]
+            1. : active는 사용자가 요소를 클릭하고 있는 동안 적용됩니다.
+            2. 태그 종류와 관계없이 사용할 수 있습니다.
+            3. 클래스 선택자와 함께 사용하면
+                원하는 요소들만 골라서 적용할 수 있습니다.
+        */
+
+        .click {
+            cursor: pointer;
+        }
+
+        .click:active {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="click">div 요소도 됩니다.</div>
+    <span class="click">span 요소도 됩니다.</span>   
+
+</body>
+</html>

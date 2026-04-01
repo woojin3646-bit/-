@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [grid의 gap 개별 적용] 
+            1. gap은 행과 열 사이의 간격을 동시에 설정하는 속성입니다.
+            2. 간격을 가로와 세로로 나누어 설정할 수도 있습니다.
+                - column-gap    => 열(가로 방향) 사이 간격
+                - row-gap       => 행(세로 방향) 사이 간격
+            3. 현재 예제에서는
+                - grid-temp-columns: 150px 150px;
+                - 2열이 생성됩니다.
+                - 아이템이 4개이므로 2행이 만들어집니다.
+            4. column-gap: 16px;
+                가로(열) 사이 간격 16px
+            5. row-gap: 8px;
+                세로(행) 사이 간격 8px
+        */
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 150px 150px;
+            align-content: center;
+            column-gap: 16px;
+            row-gap: 8px;
+
+            background-color: antiquewhite;
+            height:500px;
+        }        
+        .box { 
+            width:100px; 
+            height:100px; 
+            background:chocolate; 
+            border:1px solid black; 
+
+        }          
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

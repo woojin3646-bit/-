@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [텍스트 굵기]
+            1. font-weight 속성은 텍스트의 굵기를 설정합니다.
+            2. font-weight를 설정하지 않으면 기본값은 400(normal) 입니다.
+
+            3. font-weight 숫자 값
+                값          의미
+                --------------------------------------
+                100         Thin (매우 얇음)
+                200         Extra Light (특히 얇음)
+                300         Light (얇음)
+                400         Normal (보통, 기본값)
+                500         Medium (중간)
+                600         Semi Bold (반두껍게)
+                700         Bold (두껍게)
+                800         Extra Bold (매우 두껍게)
+                900         Black (가장 두껍게)
+
+            4. 대부분의 기본 웹 폰트는 
+                400(normal)과 700(bold)만을 명확하게 지원합니다.
+                그 외의 값은 폰트에 따라 시각적 차이가 거의 없거나 매우 미묘할 수 있습니다.
+            5. font-weight 속성은 숫자 값 외에도 
+                normal, bold와 같은 키워드 값을 사용할 수 있습니다.
+        */
+        
+        .b-100 { font-weight: 100; }
+        .b-200 { font-weight: 200; }
+        .b-300 { font-weight: 300; }
+        .b-400 { font-weight: 400; }
+        .b-500 { font-weight: 500; }
+        .b-600 { font-weight: 600; }
+        .b-700 { font-weight: 700; }
+        .b-800 { font-weight: 800; }
+        .b-900 { font-weight: 900; }    
+
+        .bold {
+            font-weight: bold;      /* 700과 동일한 값 */
+        }  
+    </style>
+</head>
+<body>
+    <div class="b-100">font-weight 100</div>
+    <div class="b-200">font-weight 200</div>
+    <div class="b-300">font-weight 300</div>
+    <div class="b-400">font-weight 400 (normal, 기본값)</div>
+    <div class="b-500">font-weight 500</div>
+    <div class="b-600">font-weight 600</div>
+    <div class="b-700">font-weight 700 (bold)</div>
+    <div class="b-800">font-weight 800</div>
+    <div class="b-900">font-weight 900</div> 
+
+    <hr>
+    
+    <div class="bold">font-weight bold (700)</div>    
+</body>
+</html>

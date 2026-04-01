@@ -1,0 +1,39 @@
+<script>
+
+    /*
+        [문제]
+        100부터 999 사이의 랜덤 숫자를 저장하고,
+        각 자리수가 20의 약수인 누적을 구하시오.     
+    */
+    
+    /*
+        [출력예시]
+        572
+        7    
+    */
+    
+    let r = Math.floor(Math.random() * 900) + 1;
+    document.write(r, "<br>");
+
+    let a = Math.floor(r / 100);
+    let b = Math.floor(r % 100 / 10);
+    let c = r % 10;
+
+    if(a != 0 &&  b != 0 && c != 0){
+        let total = 0;
+        if(20 % a == 0) {
+            total = total + a;
+        }
+        if(20 % b == 0) {
+            total = total + b;
+        }
+        if(20 % c == 0) {
+            total = total + c;
+        }
+    
+        document.write(total);       
+    }else{
+        document.write("0이 포함되어있습니다"); 
+    }
+
+</script>

@@ -1,0 +1,71 @@
+﻿<!--
+    [표 태그의 구조 요소]
+    1. table 태그는 표 전체를 감싸는 요소입니다.
+    2. caption 태그는 표의 제목을 나타내며,
+        table 태그 바로 아래에 작성합니다.
+    3. thead 태그는 표의 머리글 영역을 의미합니다.
+        주로 항목 이름(th)을 묶어 사용합니다.
+    4. tbody 태그는 표의 실제 데이터 영역을 의미합니다.
+    5. 표를 구조적으로 구분하면
+        가독성과 유지보수가 좋아지고,
+        접근성 측면에서도 도움이 됩니다.
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <caption>OTT 서비스별 주요 특징 비교</caption>
+
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>Netflix</th>
+                <th>Disney+</th>
+                <th>Watcha</th>
+                <th>Wavve</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>주요 콘텐츠</th>
+                <td>오리지널 시리즈</td>
+                <td>디즈니·마블</td>
+                <td>영화 큐레이션</td>
+                <td>국내 방송</td>
+            </tr>
+
+            <tr>
+                <th>장르 강점</th>
+                <td>드라마·다큐</td>
+                <td>애니메이션·히어로</td>
+                <td>독립영화</td>
+                <td>예능·드라마</td>
+            </tr>
+
+            <tr>
+                <th>추천 대상</th>
+                <td>글로벌 콘텐츠 선호</td>
+                <td>가족·키즈</td>
+                <td>영화 마니아</td>
+                <td>국내 콘텐츠 선호</td>
+            </tr>
+
+            <tr>
+                <th>이용 방식</th>
+                <td>월 정액</td>
+                <td>월 정액</td>
+                <td>월 정액</td>
+                <td>월 정액 / 무료</td>
+            </tr>
+        </tbody>
+
+    </table>    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [transform: scale 기본]
+            1. transform: scale(n)
+                - 요소를 n배 확대/축소합니다.
+                - 레이아웃 자리 크기는 그대로이고, 보이는 크기만 변합니다.
+            2. scale(1)     = 원래 크기
+               scale(1.2)  = 1.2배 확대
+               scale(0.8)  = 0.8배 축소
+        */
+
+        .box {
+            width: 120px;
+            height: 120px;
+            background-color: aqua;
+            font-weight: bold;
+
+            /* 텍스트 중앙 정렬 */
+            display: flex;
+            justify-content: center;    /* 가로 중앙 정렬 */
+            align-items: center;        /* 세로 중앙 정렬 */
+        }
+        .big {
+            transform: scale(1.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="box big">scale(1.4)</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jinwoo Vintage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #111;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 60px 40px;
+      background: #e9e3d8;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #444;
+    }
+
+    .section {
+      padding: 40px;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-body {
+      padding: 14px;
+    }
+
+    .brand {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 6px;
+    }
+
+    .title {
+      font-size: 15px;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">JINWOO VINTAGE</div>
+    <nav>
+      <a href="#">홈</a>
+      <a href="#">마켓</a>
+      <a href="#">판매</a>
+      <a href="#">브랜드</a>
+      <a href="#">로그인</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>빈티지 세컨핸드 패션 플랫폼</h1>
+    <p>내 취향의 아카이브 아이템을 만나보세요.</p>
+  </section>
+
+  <section class="section">
+    <h2>인기 상품</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="https://picsum.photos/400/500?random=1" alt="상품1">
+        <div class="card-body">
+          <div class="brand">Stussy</div>
+          <div class="title">90s 빈티지 스투시 티셔츠</div>
+          <div class="price">89,000원</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/500?random=2" alt="상품2">
+        <div class="card-body">
+          <div class="brand">Levi's</div>
+          <div class="title">리바이스 501 데님 팬츠</div>
+          <div class="price">120,000원</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/500?random=3" alt="상품3">
+        <div class="card-body">
+          <div class="brand">Comme des Garçons</div>
+          <div class="title">아카이브 블랙 자켓</div>
+          <div class="price">240,000원</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400/500?random=4" alt="상품4">
+        <div class="card-body">
+          <div class="brand">Nike</div>
+          <div class="title">올드스쿨 러닝 자켓</div>
+          <div class="price">75,000원</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

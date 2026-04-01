@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [박스 모서리 둥글기]
+            1. border-radius 속성은 박스의 모서리(꼭짓점)를 둥글게 만드는 속성입니다.
+            2. 값이 클수록 모서리는 더 둥글어집니다.
+            3. px 단위를 사용하면 고정된 둥근 정도를 지정할 수 있습니다.
+            4. % 단위를 사용하면 박스 크기에 비례하여 둥글기가 적용됩니다.
+            5. 박스의 가로와 세로가 같을 때,
+                border-radius: 50%를 사용하면 원 모양이 됩니다.
+        */
+
+        /* 기본 박스 */
+        div {
+            width: 100px;
+            height: 100px;
+            
+            border: 1px solid black;
+            border-radius: 16px; 
+        }
+
+        /* 원 모양 박스 */
+        .box {
+            border-radius: 50%; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+
+    <br>
+
+    <div class="box"></div>
+
+</body>
+</html>

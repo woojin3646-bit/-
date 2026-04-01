@@ -1,0 +1,30 @@
+<script>
+    /*
+        [문제]
+        1부터 9 사이의 랜덤 숫자 2개를 저장한 후,
+        두 숫자의 합이 반드시 10이 되도록 출력하시오.
+        위조건이 3번 만족할때 까지 반복하시오.
+    */
+    /*
+        [출력예시]
+        1 9
+        4 6
+        6 4
+    */
+
+    let loop = true;
+    let count = 0;
+    while(loop){
+        let a = Math.floor(Math.random() * 9) + 1;
+        let b = Math.floor(Math.random() * 9) + 1;
+        let total = a + b;
+        if(total == 10){
+            document.write(a + " " + b + "<br/>");
+            count += 1;
+            if(count == 3){
+                loop = false;
+            }
+        }
+    }
+    
+</script>

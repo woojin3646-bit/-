@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [flex 정렬: justify:conetnt:space-between과 gap의 차이]
+            1. justify-content: space-between 은
+                "남는 공간"을 아이템 사이에 분배하는 속성입니다.
+            2. gap 은
+                아이템 사이에 "고정 간격"을 추가하는 속성입니다.
+            3. space-between과 gap은 서로 다른 개념이며,
+                동시에 사용할 수 없습니다.
+            4. 두 속성은 충돌하지 않습니다.
+            5. 먼저 gap 30px 고정 간격이 생기고
+                그 다음 남는 공간을 space-between이 추가로 분배합니다.
+            6. spage-between은 첫 번째와 마지막 요소를
+                양 끝에 붙이기 때문에,
+                gap으로 만든 간격이 눈에 덜 띌 수 있습니다.
+        */
+
+        .flex {
+            display: flex;
+
+            border:1px solid black; 
+            height:300px;
+            margin-bottom: 50px;             
+        }
+        .justify-content {
+            justify-content: space-between;
+        }
+        .align-items {
+            align-items: center;
+        }
+        .box { 
+            width:80px; 
+            height:80px; 
+            background:chocolate; 
+            border:1px solid black; 
+        }      
+        .gap {
+            gap: 30px;
+        }  
+    </style>
+</head>
+<body>
+    <div class="flex justify-content align-items gap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

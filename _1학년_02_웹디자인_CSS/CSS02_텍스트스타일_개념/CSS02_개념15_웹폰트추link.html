@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--
+        [웹 폰트 추가 link]
+        1. @font-face는 폰트 파일을 직접 프로젝트에 포함하여 사용하지만,
+           파일 용량이 크거나 폰트 개수가 많아지면 로딩 시간이 길어질 수 있습니다.
+        2. 웹 폰트(Web Font)는 폰트 파일을 외부 서버(CDN)에서 불러오는 방식으로,
+           웹에 최적화되어 있어 비교적 빠르게 로딩됩니다.
+        3. Google Fonts는 대표적인 웹 폰트 서비스이며,
+           link 방식 또는 @import 로 폰트를 사용할 수 있습니다.
+        4. 이번 시간에는 link 방식을 사용합니다.
+        
+        [Google Fonts 사용 방법]
+        1. 웹 브라우저에서 https://fonts.google.com/ 에 접속합니다.
+        2. 상단 검색창에 사용할 폰트 이름을 입력합니다. 예) Dongle
+        3. 검색 결과에서 Dongle 폰트를 클릭합니다.
+        4. 오른쪽에 표시되는 패널에서
+        "Get Font" 버튼을 클릭합니다.
+        5. 이어서 "Get embed code" 버튼을 클릭합니다.
+        6. link 탭을 선택한 후,
+        제공되는 link 코드를 복사합니다.        
+    -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">    
+
+    <style>
+        div {
+            font-family: "Dongle", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        div 태그만 Dongle 폰트 적용
+    </div>
+
+    <span>
+        span 태그에는 폰트가 적용되지 않았습니다.
+    </span>  
+</body>
+</html>

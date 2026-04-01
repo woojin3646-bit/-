@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [3순위 속성과 가상 클래스 선택자]
+            1. 클래스 선택자(.class),
+               속성 선택자([type]),
+               가상 클래스 선택자(:hover, :focus 등)는
+               모두 동일한 우선순위를 가집니다.
+            2. 동일한 우선순위의 선택자가 동시에 적용될 경우,
+               CSS에서 나중에 작성된 규칙이 최종 적용됩니다.
+            3. 아래 예제에서는 클래스, 속성, 가상 클래스 선택자가
+               모두 동일한 요소에 적용되지만,
+               가장 마지막에 작성된 가상 클래스 선택자의 스타일이
+               최종적으로 적용됩니다.
+        */
+
+        .highlight {
+            color: blue;
+        }
+
+        input[type="text"] {
+            color: green;
+        }
+
+        input:focus {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" class="highlight" value="여기를 클릭해보세요">
+
+</body>
+</html>

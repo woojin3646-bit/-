@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [1순위 인라인 스타일]
+            1. CSS에는 스타일 적용 우선순위가 존재합니다.
+            2. 인라인 스타일은 HTML 태그에 style 속성으로 직접 작성하며,
+                가장 높은 우선순위를 가집니다.
+            3. 태그 선택자, 클래스 선택자, 아이디 선택자보다
+                인라인 스타일이 항상 우선 적용됩니다.
+            4. 아래 예제에서는 div 태그에 빨간색을 지정했지만,
+                인라인 스타일의 파란색이 최종 적용됩니다.
+        */
+
+        div {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="color: blue;">이 텍스트는 파란색입니다.</div>
+    
+</body>
+</html>

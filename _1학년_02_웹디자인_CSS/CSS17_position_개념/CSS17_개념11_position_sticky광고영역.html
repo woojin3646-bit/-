@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [position: sticky 광고영역]
+            1. sticky는 기본적으로는 문서 흐름대로 배치됩니다.
+            2. 스크롤이 내려가서 특정 위치(top 등)에 닿으면
+                그 순간부터는 화면에 붙은 것처럼 고정됩니다.
+            3. 단, sticky가 붙는 기준은
+                부모 영역 안에서만 유지됩니다.
+            3. 주로 사이드 광고, 목차, 메뉴 등에 활용됩니다.
+        */
+
+        .layout {
+            width: 1324px;
+            margin: 0 auto;
+
+            display: flex;          /* 옆으로 배치 */
+        }
+        .section {
+            width: 1024px;
+            height: 1400px;
+            background-color: aliceblue;
+        }
+        .aside {
+            width: 300px;
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            color: white;
+        }
+        .ads {
+            position: sticky;
+            top: 32px;
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="section">본문 콘텐츠</div>
+        <div class="aside">
+            <div class="box">사이드바 박스</div>
+            <div class="ads">광고</div>
+        </div>
+    </div>
+</body>
+</html>

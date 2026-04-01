@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [display: inline-block 공백 문제]
+            1. inline-block 요소는 inline처럼 취급됩니다.
+            2. HTML 코드에 작성된 
+                공백 문자(스페이스, 엔터)가 
+                실제 화면에 공백으로 처리됩니다.
+            3. 그 결과,
+                inline-block 요소 사이에
+                의도하지 않은 간격이 생길 수 있습니다.
+        */
+
+        .box {
+            display: inline-block;
+
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+</body>
+</html>

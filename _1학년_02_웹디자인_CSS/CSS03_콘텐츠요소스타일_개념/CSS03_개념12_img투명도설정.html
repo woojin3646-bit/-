@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/*
+			[img 투명도 설정]
+            1. opacity 속성은 요소의 투명도를 설정하는 속성입니다.
+            2. 값의 범위는 0 ~ 1 사이이며,
+               값이 작을수록 요소가 더 투명하게 보입니다.
+            3. opacity는 버튼, 이미지, 박스 등
+               모든 HTML 요소에 적용할 수 있습니다.
+            4. 아래 예제에서는 클래스 선택자를 사용하여
+               이미지의 투명도를 변경합니다.			
+		*/
+
+        .fade {
+            opacity: 0.5;
+        }     
+	</style>
+</head>
+<body>
+
+    <img src="images/logo.png" alt="이미지">
+
+    <hr>
+
+    <img src="images/logo.png" alt="이미지" class="fade">
+
+</body>
+</html>

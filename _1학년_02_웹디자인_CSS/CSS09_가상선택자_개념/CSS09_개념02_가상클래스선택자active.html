@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [가상 클래스 선택자 :active]
+            1. :active 는 사용자가 요소를 클릭하고 "누르고 있는 동안"만 적용됩니다.
+            2. 마우스를 떼는 순간 스타일은 원래대로 돌아갑니다.
+            3. 선택자:active 형태로 사용합니다.
+        */
+
+        button {
+            padding: 12px 24px;
+            background-color: lightgray;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* 마우스를 올렸을 때 */
+        button:hover {
+            background-color: gray;
+            color: white;
+        }
+        /* 클릭하고 있는 동안 */
+        button:active {
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <button>버튼을 클릭하세요.</button>
+
+</body>
+</html>

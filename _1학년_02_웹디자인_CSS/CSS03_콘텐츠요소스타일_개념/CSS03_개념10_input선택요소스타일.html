@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/*
+			[input 선택 요소 스타일]
+            1. accent-color 속성은
+            체크박스와 라디오 버튼에서
+            선택 표시(체크 표시)의 색상을 변경합니다.
+            2. 체크 여부에 따라 표시되는 색상만 변경되며,
+            입력 요소의 기본 형태는 유지됩니다.
+            3. 아래 예제에서는 클래스 선택자를 사용하여
+            체크박스와 라디오 버튼의
+            선택 표시 색상을 다르게 지정합니다.
+		*/
+
+        .accentRed {
+            accent-color: red;
+        }    
+        .accentBlue {
+            accent-color: blue;
+        } 
+	</style>
+</head>
+<body>
+
+    <label>
+        <input type="checkbox" class="accentRed">
+        체크박스 (빨간색)
+    </label>
+
+    <hr>
+
+    <label>
+        <input type="radio" class="accentBlue" name="color"> 라디오1
+    </label>    
+    <label>
+        <input type="radio" class="accentBlue" name="color"> 라디오2
+    </label>
+    
+</body>
+</html>

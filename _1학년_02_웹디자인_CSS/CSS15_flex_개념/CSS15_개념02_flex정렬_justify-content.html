@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [flex 정렬: justify-content]
+            1. flex는 부모 요소에 display: flex를 적용하여
+                자식 요소들의 배치 방식을 제어하는 레이아웃 시스템입니다.
+            2. flex의 기본 방향은 flex-direction: row 입니다.
+                즉, 가로 방향이 주축(main axis)이 됩니다.
+            3. justify-content는
+                주축(가로) 방향으로 아이템을 어떻게 정렬할 것인지 결정힙니다.
+            4. 기본값은 justify-content: flex-start 입니다.
+                즉, 아이템이 시작 지점(왼쪽)에 붙습니다.
+            5. justify-content: center는 
+                아이템 전체를 가운데로 이동시킵니다.
+            6. justify-content: flex-end는
+                아이템을 끝 지점(오른쪽)에 붙입니다.
+        */
+        
+        .flex { 
+            display:flex; 
+
+            border:1px solid black; 
+            height:120px;
+            margin-bottom: 50px; 
+        }
+        .flex-start {
+            /* 아이템을 시작 쪽으로 */
+            justify-content: flex-start;
+        }
+        .flex-center {
+            /* 아이템을 중심으로 */
+            justify-content: center;
+        }
+        .flex-end {
+            /* 아이템을 끝 쪽으로 */
+            justify-content: flex-end;
+        }                
+        .box { 
+            width:80px; 
+            height:80px; 
+            background:chocolate; 
+            border:1px solid black; 
+        }
+    </style>    
+</head>
+<body>
+    <div class="flex flex-start">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>  
+    <div class="flex flex-center">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>           
+    <div class="flex flex-end">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>   
+</body>
+</html>

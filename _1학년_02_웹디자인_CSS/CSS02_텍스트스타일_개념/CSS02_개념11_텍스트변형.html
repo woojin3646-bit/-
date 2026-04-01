@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/*
+			[텍스트 변형]
+			1. text-transform 속성은 텍스트의 대소문자 형태를 변형하는 속성입니다.
+			2. 실제 HTML 문서의 내용은 변경되지 않고,
+			   화면에 표시되는 형태만 변형됩니다.
+			3. text-transform 속성 값
+				(1) uppercase	: 모든 글자를 대문자로 변형
+				(2) lowercase	: 모든 글자를 소문자로 변형
+				(3) capitalize	: 각 단어의 첫 글자를 대문자로 변형
+		*/
+
+		.upper { text-transform:uppercase; }
+		.lower { text-transform:lowercase; }
+		.capit { text-transform:capitalize; }		
+	</style>
+</head>
+<body>
+	<p class="upper">text_transform is uppercase.</p>
+	<p class="lower">text_transform is lowercase.</p>
+	<p class="capit">text_transform is capitalize.</p>	
+</body>
+</html>

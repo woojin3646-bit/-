@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [grid-template-columns: 고정px 1열]   
+            1. 150px  → 1열 생성
+            2. 아이템이 몇 개든 1개씩 세로로 배치됩니다.
+            3. 즉, 한 줄에 들어갈 수 있는 개수는 "열 개수"로 결정됩니다.
+        */
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 150px;
+
+            background-color: antiquewhite;
+            height:500px;
+        }        
+        .box { 
+            width:80px; 
+            height:80px; 
+            background:chocolate; 
+            border:1px solid black; 
+
+        }          
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

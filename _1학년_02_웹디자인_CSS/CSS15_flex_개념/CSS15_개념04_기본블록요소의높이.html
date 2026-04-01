@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [기본 블록 요소의 높이 - height:auto]
+            1. 블록 요소의 기본 height 값은 auto 입니다.
+            2. height: auto는 내부 콘텐츠 높이에 맞춰 자동 계산됩니다.
+            3. 부모에 height를 지정해도
+                자식은 자동으로 늘어나지 않습니다.
+            4. 자식의 높이는 오직 자신의 콘텐츠 기준으로 결정됩니다.
+        */
+        
+        .parent {
+            width: 300px;
+            height: 300px;
+            background-color: antiquewhite;
+        }
+        .box {
+            width: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+</body>
+</html>

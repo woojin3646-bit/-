@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            [속성 선택자 input]
+            1. HTML 태그는 여러 속성(attribute)을 가질 수 있으며,
+                속성 선택자를 사용하면 "속성" 또는 "속성값"을 기준으로 요소를 선택할 수 있습니다.
+            2. 속성 선택자는 대괄호([])를 사용합니다.
+
+            [속성 선택자 사용법]
+            1. 선택자[속성]
+                - 특정 속성을 가진 요소를 모두 선택합니다.
+                - input[type] : type 속성이 있는 모든 input 선택
+            2. 선택자[속성="값"]
+                - 특정 속성에 특정 값을 가진 요소만 선택합니다.
+                - input[type="text"] : type이 text이 input만 선택
+        */
+
+        input[type] {
+            color: red;
+        }
+
+        input[type="text"] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" placeholder="텍스트 입력">
+    <input type="password" placeholder="비밀번호 입력">
+    
+</body>
+</html>

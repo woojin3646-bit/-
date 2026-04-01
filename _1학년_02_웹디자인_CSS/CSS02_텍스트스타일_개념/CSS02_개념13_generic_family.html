@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [generic family]
+            1. 사용자의 PC에는 모든 폰트가 설치되어 있지 않기 때문에,
+               font-family 속성으로 특정 폰트만 지정하면
+               환경에 따라 의도한 글꼴이 적용되지 않을 수 있습니다.
+            2. 이를 대비하여 font-family 속성 마지막에는 
+               generic family(일반 글꼴군)를 지정하여,
+               어떤 환경에서도 기본적인 글꼴 형태를 보장해야 합니다.
+            3. generic family는 특정 폰트 이름이 아니라,
+               글꼴의 전체적인 형태(계열)를 의미합니다.
+            4. 모든 웹 브라우저는
+               generic family에 해당하는 기본 폰트를
+               반드시 하나 이상 지원합니다.
+            5. 대표적인 generic family
+                - serif         : 획 끝에 장식이 있는 글꼴 (명조 계열) 예) 바탕체, 궁서체, Times New Roman
+                - sans-serif    : 획 끝에 장식이 없는 글꼴 (고딕 계열) 예) 맑은 고딕, 돋움, Arial, Segoe UI
+                - monospace     : 모든 글자의 폭이 동일한 글꼴
+            6. generic family는 키워드이므로
+               따옴표 없이 작성합니다.
+        */       
+        .serif {
+            font-family: serif;
+        }
+        .sans {
+            font-family: sans-serif;
+        }
+        .mono {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="serif">
+        serif : 획 끝에 장식이 있는 명조 계열 글꼴입니다.
+    </div>
+
+    <div class="sans">
+        sans-serif : 획 끝 장식이 없는 고딕 계열 글꼴입니다.
+    </div>
+
+    <div class="mono">
+        monospace : 모든 글자의 폭이 동일한 글꼴입니다.
+    </div>
+</body>
+</html>

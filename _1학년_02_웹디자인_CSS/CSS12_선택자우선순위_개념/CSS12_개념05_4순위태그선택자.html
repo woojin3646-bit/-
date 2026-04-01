@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [4순위 태그 선택자]
+            1. CSS에는 스타일 적용 우선순위가 존재합니다.
+            2. 태그 선택자는 HTML 태그 이름을 그대로 사용하여
+                스타일을 적용하는 가장 기본적인 선택자입니다.
+            3. 태그 선택자는 모든 선택자 중 우선순위가 가장 낮습니다.
+            4. 클래스 선택자, 아이디 선택자, 인라인 스타일이 존재할 경우
+                태그 선택자의 스타일은 덮어써집니다.
+            5. 아래 예제에서는 p 태그에 빨간색을 지정했지만,
+                클래스 선택자가 존재하여 최종적으로 파란색이 적용됩니다.
+        */
+
+        p {
+            color: red;
+        }
+        .highlight {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="highlight">
+        태그 선택자보다 클래스 선택자의 우선순위가 높아 파란색이 적용됩니다.
+    </p>
+
+</body>
+</html>

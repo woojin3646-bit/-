@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [transition 기본 개념]
+            1. transition은 속성 값이 변할 때 그 변화를
+                일정 시간 동안 부드럽게 보여주는 기능입니다.
+            2. 기본 구조
+                transition: 속성명 시간;
+                예) transition: transform 0.3s;
+                    transform 값이 바뀌면 0.3초 동안 천천히 변경됩니다.
+            3. transition은 변화가 일어나는 요소(기본 상태)에 작성합니다.
+                hover 안에 작성하는 것이 아닙니다.
+            4. 작동 순서
+                - 버튼 위로 마우스를 올리면 (:hover 상태)
+                - tranform의 scale(1.2) 값으로 변경됩니다.
+                - 이때 미리 설정해둔 transition: 0.3s에 의해 
+                    transform 값이 0.3초 동안 부드럽게 변경됩니다.
+        */
+
+        .btn {
+            transition: transform 0.3s;
+
+            width: 140px;
+            height: 50px;
+            background-color: #ef4444;
+            color: white;
+            cursor: pointer;
+            margin: 30px;
+
+            /* 텍스트 중앙 정렬 */
+            text-align: center;
+            line-height: 50px;
+        }
+        .btn:hover {
+            transform: scale(1.2);
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn">hover</div>
+</body>
+</html>

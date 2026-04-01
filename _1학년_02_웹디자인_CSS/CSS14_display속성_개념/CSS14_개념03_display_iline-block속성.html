@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [display: inline-block]
+            1. inline-block은 
+                inline처럼 가로 배치되지만
+                block처럼 크기 조절이 가능합니다.
+            2. 특징
+                - 줄바꿈 없음 (가로 배치)
+                - width / height 적용 가능
+                - margin 정상 적용
+            3. 이번 예제에서는 span 요소의 display를 inline-block으로 변경하여
+                inline과 inline-block의 차이를 확인합니다.
+            
+        */
+
+        .before {
+            background-color: aquamarine;
+            width: 100px;       /* inline이라 적용되지 않음 */
+            height: 100px;      /* inline이라 적용되지 않음 */
+            margin-top: 50px;   /* inline 요소는 상하 margin이 정상적으로 적용되지 않음 */
+            border: 2px solid black;
+        }        
+        .after {
+            display: inline-block;
+
+            background-color: antiquewhite;
+            width: 100px;
+            height: 100px;      
+            margin-top: 50px;   
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <span class="before">inline</span>
+    <span class="before">inline</span>
+
+    <hr>
+    
+    <span class="after">inline-block</span>
+    <span class="after">inline-block</span>
+</body>
+</html>

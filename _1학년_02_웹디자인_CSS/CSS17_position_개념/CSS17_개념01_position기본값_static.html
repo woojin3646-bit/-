@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [position 기본값: static]
+            1. 모든 요소의 position 기본값은 static 입니다.
+            2. position: static 상태에서는
+                위치를 이동할 수 없습니다.
+            3. 위치 이동을 하고 싶다면
+                position 값을 relative/absolute/fixed/sticky 중 하나로 바꿔야 합니다.
+            4. 다음 예제부터 적용해보겠습니다.
+        */
+
+        .box {
+            position: static;
+
+            width: 100px;
+            height: 100px;
+        }
+        .a {
+            background-color: antiquewhite;
+        }
+        .b {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="box a"></div>
+    <div class="box b"></div>
+</body>
+</html>

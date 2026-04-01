@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [박스 그림자 스타일]
+            1. box-shadow 속성은 요소에 그림자 효과를 추가하는 데 사용됩니다.
+            2. box-shadow 속성은 다음과 같은 순서로 작성됩니다.
+                - 가로 위치 (x-offset): 그림자가 요소의 오른쪽으로 이동하는 거리입니다. 음수 값은 왼쪽으로 이동합니다.
+                - 세로 위치 (y-offset): 그림자가 요소의 아래로 이동하는 거리입니다. 음수 값은 위쪽으로 이동합니다.
+                - 흐려질 농도 (blur-radius, 선택 사항): 그림자의 흐림 정도를 설정합니다. 값이 클수록 그림자가 더 흐릿해집니다.
+                - 색상: 그림자의 색상을 지정합니다.
+            3. 예제 설명:
+            - box1: 그림자가 16px 오른쪽, 16px 아래로 이동하며, 색상은 진한 파란색입니다.
+            - box2: 그림자가 16px 오른쪽, 16px 아래로 이동하며, 투명도가 0.5인 검은색입니다.
+            - box3: 그림자가 16px 오른쪽, 16px 아래로 이동하며, 8px의 흐림 효과와 투명도가 0.5인 검은색입니다.            
+        */
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            margin-bottom: 50px;
+        }
+        .box1 {
+             box-shadow: 16px 16px darkblue; /* 기본 상자 그림자  */
+        }        
+        .box2 {
+            box-shadow: 16px 16px rgba(0, 0, 0, 0.5); /*  상자 그림자 투명 검은색*/
+        }
+        .box3 {
+            box-shadow: 16px 16px 8px rgba(0, 0, 0, 0.5); /*  상자 그림자 투명 검은색 흐리게 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        그림자1
+    </div>
+
+    <div class="box2">
+        그림자2
+    </div>
+
+    <div class="box3">
+        그림자3
+    </div>
+</body>
+</html>

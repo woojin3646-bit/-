@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [max-width / min-width]
+            1. max-width
+                - 요소가 가질 수 있는 최대 너비를 제한합니다.
+                - 화면이 커져도 일정 폭 이상 커지지 않도록 합니다.
+                - 주로 중앙 정렬 컨테이너에 사용합니다.
+            2. min-width
+                - 요소가 가질 수 있는 최소 너비를 제한합니다.
+                - 너무 좁아지는 것을 방지합니다.
+                - 단, 작은 화면에서는 가로 스크롤이 생길 수 있으므로 주의해야 합니다.
+                - min-width는 잘 사용하지 않습니다.
+            3. 반응형 기본 패턴
+                - width: 100%;
+                - max-width: 700px;
+                - margin: 0 auto;
+        */
+
+        .box {
+            width: 100%;
+            min-width: 500px;
+            max-width: 700px;
+            margin: 0 auto;
+
+            background-color: antiquewhite;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>min-width + max-width 범위 제한</h3>
+
+        브라우저 폭을 줄여보세요.
+        어느 순간부터 min-width 때문에 가로 스크롤이 생깁니다.
+    </div>    
+</body>
+</html>

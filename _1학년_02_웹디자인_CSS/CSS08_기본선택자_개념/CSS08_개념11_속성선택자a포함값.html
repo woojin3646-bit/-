@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [속성 선택자 a 포함값]
+            1. 속성 선택자는 속성의 "값"을 기준으로도 요소를 선택할 수 있습니다.
+            2. *= 기호는 해당 문자열이 포함된 경우를 의미합니다.
+            3. a[href="example"]는
+                href 속성 값에 "example"이라는 문자열이
+                포함된 모든 a태그를 선택합니다.
+        */
+
+        a[href*="example"] {
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <p>아래의 링크 중 href 속성에 "example"이라는 단어가 포함된 링크는 coral색으로 표시됩니다</p>
+    
+    <a href="https://www.example.com">Example Link 1</a>
+    <br>
+    <a href="https://example.org/resource">Example Link 2</a>
+    <br>
+    <a href="https://www.test.com">Non-Example Link</a>
+</body>
+</html>

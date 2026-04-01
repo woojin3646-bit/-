@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            [가상 클래스 선택자 :checked]
+            1. :checked 는 사용자가 요소를 체크했을 때 적용됩니다.
+            2. 모든 요소에 사용할 수 있는 것은 아닙니다.
+            3. 주로 input 태그 중 chekcbox, radio 타입에서 사용됩니다.
+        */
+        
+        input:checked {
+            /*
+                accent-color 속성은
+                체크박스나 라디오 버튼과 같은 폼 요소의 강조 색상을 변경합니다.
+            */
+            accent-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>관심 분야를 선택하세요</h3>
+
+    <div>
+        <input type="checkbox" id="chk1">
+        <label for="chk1">HTML</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="chk2">
+        <label for="chk2">CSS</label>
+    </div>
+    
+    <div>
+        <input type="checkbox" id="chk3">
+        <label for="chk3">JavaScript</label>
+    </div>
+</body>
+</html>

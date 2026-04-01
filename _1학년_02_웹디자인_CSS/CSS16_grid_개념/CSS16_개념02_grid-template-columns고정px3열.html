@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [grid-template-columns: 고정px 3열]   
+            1. display: grid; 를 적용하면
+                자식 요소는 격자(칸)로 배치됩니다.
+            2. grid-template-columns 는
+                열(column)의 개수와 너비를 결정합니다.
+            3. 값의 개수 = 열의 개수입니다.
+                150px 150px 150px => 3열 생성
+                |----150px----|----150px----|----150px----|
+                |80px         |80px         |80px         |
+            4. 아이템의 개수가 열 개수보다 많으면
+                자동으로 다음 줄로 내려갑니다.
+            5. 현재 예제에서는 열만 지정했으며,
+                행(row)은 자동으로 생성됩니다.
+                (행은 다음 단계에서 학습합니다.)
+        */
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+
+            background-color: antiquewhite;
+            height:500px;
+        }        
+        .box { 
+            width:80px; 
+            height:80px; 
+            background:chocolate; 
+            border:1px solid black; 
+
+        }          
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

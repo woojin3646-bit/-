@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [block vs inline]
+            1. HTML 요소는 기본적으로 두 가지 성격을 가집니다.
+                - 블록 요소(block)
+                - 인라인 요소(inline)
+            2. 블록 요소(block)
+                - 가로 전체(width 100%)를 차지
+                - 줄바꿈 발생
+                - width / height 지정 가능
+                - margin / padding 모두 적용
+                - 대표 요소: div, h1~h6, p
+            3. 인라인 요소(inline)
+                - 내용 크기만큼만 차지
+                - 줄바꿈 없음(가로로 나란히 배치)
+                - width / height 적용 불가
+                - 상하 margin 정상 적용되지 않음
+                - 대표 요소: span, a, strong, img
+            4. 이 성격을 강제로 바꾸는 속성이 바로 display 입니다.
+                이는 다음 예제에서 다룹니다.
+        */
+
+        span {
+            background-color: antiquewhite;
+            height: 100px;      /* inline 요소는 height 적용 불가 */
+            margin-top: 50px;   /* inline 요소는 상하 margin이 정상적으로 적용되지 않음 */
+            border: 2px solid black;
+        }
+
+        div {
+            background-color: aquamarine;
+            height: 100px;
+            margin-top: 50px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <span>크기가 없음</span>
+    <hr>
+    <div>너비와 높이를 갖을 수 있고 가로 전체를 차지</div>
+</body>
+</html>

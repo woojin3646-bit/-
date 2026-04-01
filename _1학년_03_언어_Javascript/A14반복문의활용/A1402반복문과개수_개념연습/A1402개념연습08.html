@@ -1,0 +1,28 @@
+<script>
+    /*
+        [문제]
+        반복문을 사용하여 10부터 99까지의 숫자 중에서,
+        일의 자리가 십의 자리의 두 배이고,
+        십의 자리가 홀수인 숫자의 개수를 출력하시오.
+    */
+    /*
+        [출력예시]
+        12 36 
+        2
+    */
+    
+    let count = 0;
+    for(let i = 10; i < 100; i++){
+        let a = parseInt(i / 10);
+        let b = i % 10;
+        let check1 = b == a *2;
+        let check2 = a % 2 == 1;
+        if(check1 && check2){
+            document.write(i + " ");
+            count += 1;
+        }
+    }
+    document.write("<br/>");
+    document.write(count);
+
+</script>

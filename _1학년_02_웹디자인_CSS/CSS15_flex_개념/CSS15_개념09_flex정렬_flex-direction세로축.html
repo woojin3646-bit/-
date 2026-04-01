@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [flex 정렬: flex-direction 세로 축]
+            1. flex-direction을 column으로 바꾸면
+                - 세로가 주축(main axis)
+                - 가로가 교차축(cross axis) 입니다.
+            2. justify-content
+                - 이제 세로 정렬이 됩니다.
+            3. align-items
+                - 이제 가로 정렬이 됩니다.
+            4. 즉, column 일 때는
+                justify-content  = 세로 정렬
+                align-items      = 가로 정렬
+            5. 정렬 속성은 그대로지만
+                기준 축이 바뀌는 것이 핵심입니다.
+        */
+
+        .flex { 
+            display:flex; 
+            flex-direction: row;        /* 기본 값 */
+
+            border:1px solid black; 
+            height:120px;
+            margin-bottom: 50px; 
+        }
+        .justify-content {
+            justify-content: center;    /* 세로 중앙 */
+        }
+        .align-items {
+            align-items: center;        /* 가로 중앙 */
+        }
+        .box { 
+            width:80px; 
+            height:80px; 
+            background:chocolate; 
+            border:1px solid black; 
+        }        
+    </style>    
+</head>
+<body>
+
+    <div class="flex justify-content align-items">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>    
+   
+</body>
+</html>

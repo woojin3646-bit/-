@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [폰트 지정]
+            1. font-family 속성은 텍스트에 적용할 글꼴(폰트)을 지정합니다.
+            2. 사용자의 컴퓨터에는 모든 폰트가 설치되어 있지 않기 때문에,
+               특정 폰트만 지정하면 의도한 글꼴이 보이지 않을 수 있습니다.
+            3. 이를 대비하여 font-family에는
+               여러 개의 폰트를 쉼표(,)로 나열하여 작성합니다.
+            4. 브라우저는 왼쪽부터 순서대로 폰트를 확인하며,
+               사용 가능한 폰트를 발견하면 그 폰트를 적용합니다.
+            5. 폰트 이름에 공백이나 특수 문자가 포함된 경우,
+               큰따옴표 또는 작은따옴표로 반드시 감싸야 합니다.
+        */       
+        .gung {
+            /* 궁서가 없으면 바탕 폰트를 시도 */
+            font-family: "궁서", "바탕";
+        }
+        .not {
+            /* 첫 번째 폰트는 실패, 두 번째 폰트 적용 */
+            font-family: "없는 폰트", "바탕";
+        }
+    </style>
+</head>
+<body>
+    <div class="gung">진지한 궁서체</div>
+    <div class="not">없는 폰트</div>
+</body>
+</html>

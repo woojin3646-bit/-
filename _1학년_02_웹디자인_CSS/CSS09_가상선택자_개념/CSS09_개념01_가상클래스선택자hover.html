@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            [가상 클래스 선택자]
+            1. 가상 클래스는 요소의 "상태"를 기준으로 선택합니다.
+            2. :hover 는 사용자가 요소에 마우스를 올렸을 때 적용됩니다.
+            3. 선택자:hover 형태로 사용합니다.
+            4. 버튼, 링크, 메듀 등에 시각적 피드백을 주기 위해 자주 사용됩니다.
+        */
+
+        .nav-item {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            color: #555;
+            background-color: #e0e0e0;
+            cursor: pointer;                    /* 마우스 커서를 포인터로 변경 */
+        }
+
+        /* hover 마우스를 올렸을 때 */
+        .nav-item:hover {
+            color: #000;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="nav-item">Home</button>
+    <button class="nav-item">About</button>
+    <button class="nav-item">Services</button>
+    <button class="nav-item">Contact</button>
+    
+</body>
+</html>

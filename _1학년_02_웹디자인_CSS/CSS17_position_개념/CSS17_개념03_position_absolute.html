@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [position: absolute]
+            1. absolute는 위치 기준이
+                가장 가까운 position이 지정된 부모 요소가 됩니다.
+            2. 만약 기준 부모가 없다면
+                화면(body)을 기준으로 배치됩니다.
+            3. 현재 예제는 부모가 화면(body)이 되어
+                화면 밖 위로 이동 되었습니다.
+        */
+
+        .pos {
+            position: absolute;
+            top: -40px;     /* 위로 40px 이동 */
+            left: 40px;     /* 오른쪽으로 40px 이동 */
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .a {
+            background-color: antiquewhite;
+        }
+        .b {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="box a">고정Box</div>
+    <div class="box b pos">이동Box</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [display: inline-block 베이스라인 문제]
+            1. 텍스트가 있는 박스와
+                텍스트가 없는 박스가 함께 있을 경우
+                기준선 계산 방식이 달라져
+                박스가 어긋나 보일 수 있습니다.
+            2. 이 문제는 공백 문제와는 다른 개념이며,
+                해결 방법은 vertical-align 값을
+                top / middle / bottom 등으로 재설정하는 것입니다.
+        */
+
+        * {
+            /* 폰트 사이즈 제거 */
+            font-size: 0;
+        }
+        .box {
+            display: inline-block;
+            /* 폰트 사이즈 재설정 */
+            font-size: 12px;
+
+            vertical-align: middle;
+
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box">box2</div>
+    <div class="box"></div>
+</body>
+</html>

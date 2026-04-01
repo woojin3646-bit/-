@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [공백과 줄바꿈 제어]
+            1. white-space 속성은 텍스트의 공백(스페이스)과 줄바꿈(엔터)을
+               브라우저가 어떻게 처리할지 결정합니다.
+            2. white-space 속성 값
+                (1) normal
+                    - 기본 값
+                    - 연속 공백과 엔터는 한 칸 공백으로 처리
+                    - 브라우저 너비에 따라 자동 줄바꿈 됨
+                (2) nowrap
+                    - 연속 공백과 엔터는 한 칸 공백으로 처리
+                    - 브라우저 너비에 따라 자동 줄바꿈이 발생하지 않음
+                (3) pre
+                    - 연속 공백과 엔터를 그대로 유지
+                    - 브라우저 너비에 따라 자동 줄바꿈이 발생하지 않음
+                (4) pre-line
+                    - 연속 공백은 한 칸 공백으로 처리
+                    - 엔터(줄바꿈)는 그대로 유지
+                    - 브라우저 너비에 따라 자동 줄바꿈 됨
+            4. white-space 동작 비교
+                                    normal      nowrap       pre     pre-line
+                ---------------------------------------------------------------
+                연속 공백               X           X           O           X
+                엔터 줄바꿈             X           X           O           O
+                브라우저 줄바꿈         O           X           X           O
+        */        
+        span {
+            font-size: 30px;
+        }
+        .normal {
+            white-space: normal;
+        }
+        .nowrap {
+            white-space: nowrap;
+        }
+        .pre {
+            white-space: pre;
+        }
+        .pre-line {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <div class="normal">
+        <span>white-space: normal (기본값)</span>
+        공백을          여러 번          넣었습니다.
+        엔터로 줄을 바꿨습니다.
+        하지만 화면에서는 공백 하나처럼 보이고 엔터도 줄바꿈으로 적용되지 않습니다.
+        텍스트가 길어지면 브라우저 너비에 따라 자동 줄바꿈이 발생합니다.
+    </div>  
+
+    <hr>
+
+    <div class="nowrap">
+        <span>white-space: nowrap</span>
+        공백을          여러 번          넣었습니다.
+        엔터로 줄을 바꿨습니다.
+        하지만 줄바꿈이 금지되어 한 줄로 계속 이어집니다.
+        그래서 화면 밖으로 뻗어 나갈 수 있습니다.
+    </div>
+
+    <hr>
+
+    <div class="pre">
+        <span>white-space: pre</span>
+        공백을          여러 번          넣었습니다.
+        엔터로 줄을 바꿨습니다.
+        아래 줄은 일부러 들여쓰기를 넣었습니다.
+            들여쓰기(맨 앞 공백)도 그대로 출력됩니다. 텍스트가 길어지면 화면 밖으로 뻗어 나갈 수 있습니다.
+    </div>  
+
+    <hr>
+
+    <div class="pre-line">
+        <span>white-space: pre-line</span>
+        공백을          여러 번          넣었습니다.
+        엔터로 줄을 바꿨습니다.
+        공백은 하나처럼 보이지만,
+        엔터(줄바꿈)는 그대로 유지됩니다. 텍스트가 길어지면 브라우저 너비에 따라 자동 줄바꿈이 발생합니다.
+    </div>     
+</body>
+</html>

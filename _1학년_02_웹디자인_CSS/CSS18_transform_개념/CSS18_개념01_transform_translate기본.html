@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [transform: translate 기본]
+            1. transform: translate(x, y)
+                - 화면에서 보이는 위치만 이동합니다.
+            2. 원래 차지하던 공잔(자리)은 그대로 유지됩니다.
+            3. 그래서 아래 요소는 위로 올라오지 않습니다.
+        */
+
+        .box {
+            width: 120px;
+            height: 120px;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        .a {
+            transform: translate(60px, 40px);
+
+            background-color: blue;
+            color: white;
+        }
+        .b  {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box a">A(이동)</div>
+        <div class="box b">B</div>
+    </div>
+</body>
+</html>

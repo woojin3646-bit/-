@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [텍스트 가로 중앙 정렬]
+            1. text-align 속성은 "글자 정렬" 속성이지만
+                인라인 요소(예: a, span, img) 정렬에도 영향을 줍니다.
+            2. text-align: center; 는 부모 요소 안에서
+                글자와 인라인 요소를 가운데로 정렬합니다.
+            3. 블럭 요소 자체를 움직이는 것이 아니라,
+                "부모 안의 내용"을 정렬하는 개념입니다.
+        */
+
+        body {
+            margin: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 120px;
+            background-color: aquamarine;
+
+            margin: 30px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">가로 중앙 정렬</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<script>
+    /*
+        [문제]
+        7951의 각각의 자릿수를 구하시오.
+    */
+
+    /*
+        [출력예시]
+        7
+        9
+        5
+        1
+    */
+let score = 7951;
+a = Math.floor ( score / 1000);
+b = Math.floor (( score % 1000) / 100);
+c = Math.floor (( score % 100) / 10);
+d = Math.floor ( score % 10 );
+document.writeln ( a, b, c, d);
+  
+</script>

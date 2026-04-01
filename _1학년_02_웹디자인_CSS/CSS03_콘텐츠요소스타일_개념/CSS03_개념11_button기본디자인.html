@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [button 기본 디자인]
+            1. button 태그는 기본적으로 기본 스타일이 있습니다.
+            2. CSS를 사용하여 다음 속성을 수정할 수 있습니다.
+                (1) width / height      : 버튼 크기 설정
+                (2) background-color    : 배경색
+                (3) color               : 글자색
+                (4) border              : 테두리
+                (5) border-radius       : 모서리 둥글기
+                (6) cursor              : 마우스 모양 변경
+                (7) font-size           : 글자 크기
+            3. cursor: pointer
+                - 마우스를 올렸을 때 손가락 모양으로 변경됩니다.
+                - 클릭 가능한 요소임을 사용자에게 알려주는 역할을 합니다.
+        */
+
+        .btn {
+            width: 120px;
+            height: 40px;
+
+            background-color: #3b82f6;
+            color: white;
+
+            border: none;           /* 기본 테두리 제거 */
+            border-radius: 5px;     /* 모서리 둥글게 */
+
+            font-size: 14px;
+            cursor: pointer;        /* 손가락 모양 */
+        }
+    </style>
+</head>
+<body>
+    <button>기본 버튼</button>
+    <hr>
+    <button class="btn">디자인 버튼</button>
+</body>
+</html>

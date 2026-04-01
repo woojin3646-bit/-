@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [박스 속 여백 방향별 설정]
+            1. padding은 상, 하, 좌, 우 방향별로 각각 설정할 수 있습니다.
+            2. 방향별 padding 속성
+                - padding-top       : 위쪽 속 여백
+                - padding-right     : 오른쪽 속 여백
+                - padding-bottom    : 아래쪽 속 여백
+                - padding-left      : 왼쪽 속 여백
+            3. 특정 방향에만 여백을 주어
+                콘텐츠 위치를 세밀하게 조정할 수 있습니다.
+        */
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            
+            margin: 20px;
+        }
+        .top {
+            padding-top: 16px;
+        }
+        .left {
+            padding-left: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top">
+        위쪽 padding
+    </div>
+
+    <div class="left">
+        왼쪽 padding
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [position: fiexed 겹침 z-index 없음]
+            1. position이 적용된 요소들은 겹칠 수 있습니다.
+            2. 기본적으로 겹칠 때
+                나중에 나온 요소가 위에 보이는 경우가 많습니다.
+            3. 이를 zindex를 통해 변경할 수 있습니다.
+        */
+
+        .fixed-a {
+            position: fixed;
+            left: 0;
+            top: 0;
+
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+        }
+        .fixed-b {
+            position: fixed;
+            top: 50px;
+            left: 50px;
+
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-a">A 사각형</div>
+    <div class="fixed-b">B 사각형</div>
+</body>
+</html>

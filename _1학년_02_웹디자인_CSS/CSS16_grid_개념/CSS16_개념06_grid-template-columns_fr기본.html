@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [grid-template-columns: fr 기본]   
+            1. fr은 남은 공간을 비율로 나누는 단위입니다.
+            2. fr = fraction(분수/비율)
+            3. 150px 1fr
+                - 첫 열은 150px 고정
+                - 나머지는 남은 너비를 1fr이 전부 차지합니다.
+                - 예를 들어 화면이 1050px이라면:
+                    1열 => 150px
+                    2열 => 900px
+            4. 즉, fr은 고정 값이 아니라
+                남은 공간을 비율로 나눈 값입니다.
+                1fr = 전체 너비 - 고정 열
+        */
+        
+        .grid {
+            display: grid;
+            width: 1050px;
+            grid-template-columns: 150px 1fr;
+
+            background-color: antiquewhite;
+            height:500px;
+        }        
+        .box { 
+            width:80px; 
+            height:80px; 
+            background:chocolate; 
+            border:1px solid black; 
+
+        }          
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

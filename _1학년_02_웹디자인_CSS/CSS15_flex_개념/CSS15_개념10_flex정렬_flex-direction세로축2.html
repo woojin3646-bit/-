@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [flex 정렬: flex-direction 세로 축2]
+            1. flex-direction을 column으로 바꾸면
+                - 세로가 주축(main axis)
+                - 가로가 교차축(cross axis) 입니다.
+            2. justify-content는
+                항상 "주축" 기준으로 정렬합니다.
+            
+            3. space-between
+                - 첫 아이템은 위, 마지막 아이템은 아래
+                - 사이 간격만 동일
+            4. spae-around
+                - 각 아이템 위아래 동일 여백
+                - 사이 가격은 양끝보다 2배
+            5. space-evenly
+                - 모든 간격이 동일
+        */  
+        
+        .flex { 
+            display:flex;
+            flex-direction: column; 
+
+            border:1px solid black; 
+            height:600px;
+            margin-bottom: 50px; 
+        }
+        .flex-space-between {
+            /* 아이템끼리 최대한 거리 두기 */
+            justify-content: space-between;
+        }
+        .flex-space-around {
+            /* 아이템 양옆에 같은 여백 */
+            justify-content: space-around;
+        }
+        .flex-space-evenly {
+            /* 아이템 사이 여백 크기 일치 */
+            justify-content: space-evenly;
+        }                
+        .box { 
+            width:80px; 
+            height:80px; 
+            background:chocolate; 
+            border:1px solid black; 
+        }
+    </style>    
+</head>
+<body>
+    <div class="flex flex-space-between">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>  
+    <div class="flex flex-space-around">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>           
+    <div class="flex flex-space-evenly">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>   
+</body>
+</html>

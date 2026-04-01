@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [flex 정렬: flex-direction 세로 축3]
+            1. flex-direction을 column으로 바꾸면
+                - 세로가 주축(main axis)
+                - 가로가 교차축(cross axis)
+            2. align-items는
+                항상 "교차축" 기준으로 정렬합니다.            
+            
+            3. align-items: flex-start   - 왼쪽 정렬
+            4. align-items: center       - 가운데 정렬
+            5. align-items: flex-end     - 오른쪽 정렬
+        */  
+        
+        .flex { 
+            display:flex;
+            flex-direction: column; 
+
+            border:1px solid black; 
+            height:300px;
+            margin-bottom: 50px; 
+        }
+        .justify-content {
+            justify-content: center;
+        }   
+        .align-items-start {
+            align-items: flex-start;
+        }            
+        .align-items-center {
+            align-items: center;
+        }            
+        .align-items-end {
+            align-items: flex-end;
+        }            
+        .box { 
+            width:80px; 
+            height:80px; 
+            background:chocolate; 
+            border:1px solid black; 
+        }
+    </style>    
+</head>
+<body>
+    <div class="flex justify-content align-items-start">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>  
+    <div class="flex justify-content align-items-center">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>           
+    <div class="flex justify-content align-items-end">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>   
+</body>
+</html>

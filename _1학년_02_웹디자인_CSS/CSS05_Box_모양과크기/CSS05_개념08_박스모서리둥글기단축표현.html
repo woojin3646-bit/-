@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [박스 모서리 둥글기 단축 표현]
+            1. border-radius는 여러 값을 한 줄로 작성할 수 있는 단축 속성입니다.
+            2. 값의 개수에 따라 적용되는 모서리가 달라집니다.
+                - 값 1개    : 모든 모서리에 동일하게 적용
+                - 값 2개    : (좌상/우하) (우상/좌하)         
+                - 값 4개    : 좌상 → 우상 → 우하 → 좌하 (시계 방향)
+            3. 보통 모든 모서리를 동일하게 만들 때는
+               한 개의 값만 사용하는 경우가 가장 많습니다.
+        */
+
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        
+        .box1 {
+            border-radius: 16px 26px 36px 46px;
+        }
+        .box2 {
+            border-radius: 16px 46px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+
+    <br>
+
+    <div class="box2"></div>
+
+</body>
+</html>

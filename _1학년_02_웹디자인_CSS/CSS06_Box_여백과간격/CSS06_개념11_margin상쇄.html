@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [margin 상쇄]
+            1. padding(속 여백)
+                - 요소 내부에 적용되는 공간입니다.
+                - 절대 상쇄되지 않습니다.
+            2. margin(바깥 여백)
+                - 요소 외부에 적용되는 공간입니다.
+                - 블록 요소끼리 만날 경우 여백 상쇄(margin collapse)가 발생합니다.
+                - 두 값 중 큰 값 하나만 적용됩니다.
+                - 예)
+                    위 요소 margin-bottom: 20px
+                    아래 요소 margin-top: 30px
+                    실제 간격 = 30px (큰 값만 적용)
+
+        */
+
+        .box {
+            height: 60px;
+        }
+
+        .padding1 {
+            background-color: aliceblue;
+            padding-bottom: 20px;
+        }
+        .padding2 {
+            background-color: lightgreen;
+            padding-top: 30px;
+        }
+
+        .margin1 {
+            background-color: lightcoral;
+            margin-bottom: 20px;
+        }
+        .margin2 {
+            background-color: lightgoldenrodyellow;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="padding1 box">
+        padding-bottom: 20px
+    </div>
+    <div class="padding2 box">
+        padding-top: 30px
+    </div>
+ 
+    <hr>
+
+    <div class="margin1 box">
+        margin-bottom: 20px;
+    </div>
+    <div class="margin2 box">
+        margin-top: 30px;
+    </div>
+</body>
+</html>

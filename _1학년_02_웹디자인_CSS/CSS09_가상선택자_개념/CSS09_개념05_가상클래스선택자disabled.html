@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            [가상 클래스 선택자 :disabled]
+            1. :disabled 는 사용자가 사용할 수 없는 상태의 요소를 선택합니다.
+            2. input, button 과 같은 폼 요소에서 사용됩니다.
+            3. 비활성화된 요소는 입력하거나 클릭할 수 없습니다.
+            4. :disabled 를 이용해 비활성 상태를 시각적으로 표현할 수 있습니다.
+        */
+
+        input:disabled {
+            background-color: lightgray;
+        }
+        button:disabled {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" disabled placeholder="비활성화된 입력창입니다.">
+    <br>
+    <button disabled>비활성화된 버튼</button>
+</body>
+</html>

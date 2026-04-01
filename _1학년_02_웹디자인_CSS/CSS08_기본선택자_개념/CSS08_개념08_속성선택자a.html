@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            [속성 선택자 a]
+            1. 속성 선택자는 input뿐만 아니라 a 태그처럼
+                속성을 자주 사용하는 요소에도 매우 유용합니다.
+            2. a[href]는 href 속성이 있는 모든 a 태그를 선택합니다.
+            3. a[href="..."]는 href 값이 정확히 일치하는 a 태그만 선택합니다.
+        */
+        
+        a[href] {
+            color: yellow;
+            text-decoration: none;     
+        }
+
+        a[href="https://www.naver.com"] {
+            background-color: green;
+        }
+
+        a[href="https://www.google.com"] {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com">네이버 접속</a>
+    <a href="https://www.google.com">구글 접속</a>    
+</body>
+</html>

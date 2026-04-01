@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [text-overflow: ellipsis]
+            1. text-overflow는 한 줄 텍스트가 영역을 초과할 때
+                어떻게 표시할지 결정합니다.
+            2. text-overflow는 단독으로 사용이 불가합니다.
+            3. 반드시 아래 조건이 필요합니다.
+                - white-space: nowrap;
+                - overflow: hidden;
+            4. 값
+                - clip      : 그냥 잘림
+                - ellipsis  : ... 으로 표시              
+        */
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin-bottom: 50px;
+            
+            white-space: nowrap;
+            overflow: hidden; 
+        }
+
+        .clip {
+            text-overflow: clip;
+        }
+        .ellipsis {
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box clip">
+        넘치는 텍스트는 그냥 잘립니다.
+    </div>
+
+    <div class="box ellipsis">
+        넘치는 텍스트는 말줄임표로 표시됩니다.
+    </div>
+</body>
+</html>

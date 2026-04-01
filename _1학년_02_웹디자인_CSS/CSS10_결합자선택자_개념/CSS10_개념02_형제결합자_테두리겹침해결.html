@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [형제 결합자 테두리 겹침 해결]
+            1. 모든 .box 요소는 기본적으로 파란색 테두리를 가지고 있습니다.
+            2. 상하로 나열되면서 테두리가 겹쳐 두꺼워 보일 수 있습니다.
+            3. 형제 결합자(~)를 사용하여,
+                첫 번째 상자를 제외한 나머지 상자들의 상단 테두리를 제거했습니다.
+        */
+
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid blue;
+        }
+
+        .box ~ .box {
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">첫 번째 상자</div>
+    <div class="box">두 번째 상자</div>
+    <div class="box">세 번째 상자</div>
+    
+</body>
+</html>

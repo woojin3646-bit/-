@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            [flex 정렬: align-items]
+            1. display: flex를 적용하면
+                부모는 flex 컨테이너가 되고
+                자식은 flex item이 됩니다.
+            2. flex의 기본 방향은
+                flex-direction: row 입니다.
+            3. row 기준으로
+                가로 방향이 주축(main axis)
+                세로 방향이 교차축(cross axis) 입니다.
+            
+            4. justify-content는
+                주축 방향 정렬을 담당합니다.
+            5. align-items는
+                교차축 방향 정렬을 담당합니다.
+            
+            6. align-items: flex-start
+                위쪽
+            7. align-items: center
+                세로 가운데
+            8. align-items: flex-end
+                아래쪽
+        */
+
+        .flex { 
+            display:flex; 
+
+            border:1px solid black; 
+            height:120px;
+            margin-bottom: 50px; 
+        }
+        .align-items-start {
+            /* 교차 축 시작 */
+            align-items: flex-start;
+        }        
+        .flex-center {
+            /* 기본 축 중심 */
+            justify-content: center;
+        }
+        .align-items-end {
+            /* 교차 축 끝 */
+            align-items: flex-end;
+        }
+        .align-items-center {
+            /* 교차 축 중심 */
+            align-items: center;
+        }
+        .box { 
+            width:80px; 
+            height:80px; 
+            background:chocolate; 
+            border:1px solid black; 
+        }        
+    </style>    
+</head>
+<body>
+
+    <div class="flex align-items-start flex-center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>    
+
+    <div class="flex align-items-center flex-center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>      
+    
+    <div class="flex align-items-end flex-center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>      
+</body>
+</html>

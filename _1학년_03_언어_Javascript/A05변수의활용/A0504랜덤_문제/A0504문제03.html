@@ -1,7 +1,8 @@
 <script>
     /*
         [문제]
-        시험 점수는 0에서 100 사이이며, 항상 5점 단위로만 나옵니다. 
+        시험 점수는 0에서 100 사이이며, 
+        항상 5점 단위로만 나옵니다. 
         예를 들어, 92점은 나올 수 없습니다. 
         철수와 민수와 영희는 시험을 보았다. 
         세학생의 각각의 점수와 총점과 평균을 출력하시오.   
@@ -16,6 +17,18 @@
             170
             56.67
     */
+let a= Math.floor(Math.random()*21) * 5 ;
+let b= Math.floor(Math.random()*21) * 5 ;
+let c= Math.floor(Math.random()*21) * 5 ;
+
+
+
+document.writeln(a + "<br>");
+document.writeln(b + "<br>");
+document.writeln(c + "<br>");
+document.writeln(a + b + c + "<br>");
+document.writeln(((a + b + c)/3).toFixed(2) + "<br>");
+
 
    
 </script>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contnet="width=device-wdith, initial-scale=1.0">
+        <title>어렵다 진짜 개빡치게</title>
+    </head>
+<body>
+   입력해라 <input type = "text" placeholder="정수빈">
+   <p>패스워드 <input type = "password" placeholder="반지 ㄱㄱ?"  >
+    </p>
+   핸드폰번호 <input type = "number" placeholder="010부터 입력해라">
+   <p>
+   생년원일 <input type="date">
+   </p>
+   이메일 <input type= "email" readonly value="이거 안적힌다">
+   <p>
+    좋아하는 컬러를 고르시오 <input type="color" readonly value="이거 안적힌다">
+   </p>
+   남성<input type="radio">
+   여성<input type="radio"><br>
+
+   이성<input type="radio" name="gender"> 이성<input type="radio" name="gender"><br>
+   1<input type="checkbox" checked ><br>
+   2<input type="checkbox"><br>
+   3<input type="checkbox"><br>
+   4<input type="checkbox"><br>
+
+<button onclick="alert ('눌러봐요 여러분 ')" >일단 눌러봐요</button>
+<br>
+<a href="https://www.naver.com">
+  <button>로그인</button>
+</a>
+
+
+<h2>적어보자</h2>
+<textarea placeholder="다음줄로 적어보자"></textarea>
+<br>
+<textarea placeholder="fasfmlkrrrn">
+이렇게 
+띄어서쓰면 두줄로 된다.
+</textarea>
+<br>
+<textarea rows="4"> </textarea> <textarea cols="3"></textarea>
+<br>
+<h3>좋아하는 음식을 골라요</h3>
+ <select size="1">
+     <option>짜장면</option>           
+     <option>짜장면</option>          
+     <option>짜장면</option>             
+     <option>짜장면</option>
+     <option>짜장면</option>             
+ </select>
+ <select multiple size="1">
+     <option>짜장면</option>          
+     <option>짜장면</option>             
+     <option>짜장면</option>
+     <option>짜장면</option>  
+ </select>
+
+
+   
+</body> 
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>설문조6사</h2>
+    <table border="1">
+        <tr>
+            <th colspan="2">기본정보</td>
+        </tr>
+        <tr>
+            <td>이름</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>나이</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td>성별</td>
+            <td>
+                <input type="radio" name="gender"> 남성
+                <input type="radio" name="gender"> 여성
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">설문항목</th>
+        </tr>
+        <tr>
+            <td>직업</td>
+            <td><select>
+                <option>선택하세요</option>
+                <option>학생</option>
+                <option>회사원</option>
+                <option>프리랜서</option>
+                <option>기타</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>관심 분야</td>
+            <td><input type="checkbox"> it
+            <input type="checkbox"> 디자인
+            <input type="checkbox"> 마케팅</td>
+        </tr>
+        <tr>
+            <td>만족도</td>
+            <td><select>
+                <option>매울불만족</option>
+                <option>불만족</option>
+                <option>보통</option>
+                <option>만족</option>
+                <option>매우만족</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>의견</td>
+            <td><textarea rows ="4" cols="40"></textarea><td>
+            </tr>
+        <tr>
+             <td colspan="2"><button onclick="location.href='https://www.naver.com'">제출 </button></td>
+        </tr>
+    </table>
+    <h3>응답 현황</h3>
+
+     <table border="1">
+        <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>나이</th>
+            <th>성별</th>
+            <th>직업</th>
+            <th>관심 분야</th>
+            <th>만족도</th>
+            <th>의견</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>홍길동</td>
+            <td>25</td>
+            <td>남성</td>
+            <td>학생</td>
+            <td>IT</td>
+            <td>만족</td>
+            <td>좋았습니다.</td>
+        </tr>
+     </table>
+</body>
+</html>
+
+
+<!--
+1️⃣ 기본 구조 (무조건)  
+.클래스이름 {             
+    속성: 값;
+}
+
+ex <h1.class=제목>제목<h1>
+   >> .제목{
+     background-color : rad 
+   }
+
+
+👉 스타일 = 무조건 class로 한다
+
+🎯 2️⃣ 텍스트 (필수 4개)
+.text {
+    font-size: 16px;        /* 크기 */
+    font-weight: 400;       /* 굵기 (400 / 700만 기억) */
+    text-align: center;     /* 정렬 */
+    font-family: "폰트", sans-serif; /* 폰트 */
+}
+
+font-size: 16px
+font0-weight: 400; , 700;
+font-align: center;
+
+👉 이 4개 = 텍스트 끝
+
+🎯 3️⃣ 박스 (div 기본 세팅)
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: #eee;
+}
+
+👉 div = 박스라고 생각해라
+
+🎯 4️⃣ 버튼 (실무 필수)
+.btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+👉 이거 그대로 외워도 됨
+
+🎯 5️⃣ input (로그인 / 검색창)
+.input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+🎯 6️⃣ 링크 기본 제거 (무조건)
+a {
+    text-decoration: none;
+    color: black;
+}
+
+👉 안하면 촌티남
+
+🎯 7️⃣ 메뉴 만들 때 (핵심)
+ul {
+    list-style: none;
+}
+
+👉 네비게이션 만들 때 필수
+
+🎯 8️⃣ span (부분 스타일)
+<p>여기 <span class="red">이거만</span></p>
+
+👉 일부만 바꿀 때
+
+🎯 9️⃣ hover (마우스 효과)
+.btn:hover {
+    background-color: red;
+}
+
+👉 실무 감성 핵심
+
+🎯 10️⃣ 구조 핵심 개념
+
+👉 공통 + 개별
+
+p {
+    font-size: 16px;
+}
+
+.red {
+    color: red;
+}
+
+👉 이 구조 못하면 실무 못함
+
+💣 ❌ 버려라 (지금)
+font-style
+word-break
+white-space
+리스트 모양 바꾸기
+테이블 디테일
+
+👉 시간 낭비
+
+💥 최종 요약 (진짜 핵심)
+
+👉 스타일 = class
+👉 레이아웃 = div
+👉 텍스트 = 4개 (size / weight / align / family)
+👉 UI = button / input / link
+
+💬 너한테 딱 맞는 공부법
+
+이거 해라 👇
+
+1️⃣ 로그인 페이지 만들어
+2️⃣ 버튼 3개 만들어
+3️⃣ 메뉴 만들어 (ul + li)
+4️⃣ 폰트 바꿔
+
+👉 이거 하면 끝 -->

@@ -12,11 +12,38 @@
     */
     
     /*
-        [출력예시]
+        [출력예시] 
         33
         2
         짝짝    
     */
 
-    
+let dice = Math.floor(Math.random()*900)+100;
+
+let a = Math.floor(dice / 100)   // 백의 자리
+let b = Math.floor(dice / 10) % 10  // 십의 자리
+let c = dice % 10;              // 일의 자리
+
+let count = 0;
+
+if (a % 2 == 0){
+    count += 1
+}else if( b % 2 == 0){
+    count += 1 
+}else if( c % 2 == 0){
+    count += 1
+}
+
+if(count=3){
+    document.writeln("개쌤")
+}else if(count=2){
+    document.writeln("최강")
+}else if(count=1){
+    document.writeln("보통")
+}else{
+    document.writeln("약함")
+}
+
+
+
 </script>

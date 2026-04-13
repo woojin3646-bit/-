@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥도날드</title>
+    <link rel="icon" href="img/favicon.png" tyep="image/png">    
+    <style>
+        /* 공통 */
+        * {
+            margin: 0 auto;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }    
+        
+        /* header */
+        .img-header {
+            width: 120px;
+        }
+        .div-header {
+            text-align: center;
+            width: 800px;
+            height: 150px;
+            background-color: #007000;  
+        }   
+        
+        /* center1 */
+        .div-center1 {
+            text-align: center;
+            color: #fff;  
+            width: 800px;
+            height: 200px;
+            background-color: #007000;            
+        }
+        .center1-span-main {
+            font-size: 28px;
+            color: #fff;  
+        }    
+        .center1-span-sub {
+            font-size: 20px;
+            color: #999;   
+        }     
+        
+        /* center2 */
+        .div-center2 {
+            text-align: center;
+            color: #fff;  
+            width: 800px;
+            height: 600px;
+            background-color: #007000;            
+        }
+        .img-center2 {
+            height: 300px;
+        }
+        .tr-center2 {
+            height: 500px;
+        }
+        .td-center2 {
+            width: 350px;
+            border-radius: 25px;
+            background-color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            color: #EE6A7B;
+        }
+        .td-center2:hover {
+            color: #fff;
+            font-weight: bold;
+            background-color: #ffb700;
+        }        
+        .td-center2-gap {
+            width: 25px;
+        }   
+        
+        /* footer */
+        .div-footer {
+            text-align: center;
+            color: #fff;              
+            width: 800px;
+            height: 120px;
+            background-color: #007000;               
+        }
+        .span-bold {
+            font-weight: bold;
+            color: #ffd500fd;
+        }           
+    </style>    
+</head>
+<body>
+    <!-- 인덱스_헤더 -->
+    <div class="div-header">
+        <br><br>
+        <a href="index.html"><img class="img-header" src="img/logo.png"></a>
+    </div>
+
+    <!-- 인덱스_센터1 -->
+    <div class="div-center1">
+        <br><br><br>
+        <span class="center1-span-main">사용자 유형을 선택하세요</span>
+        <br>
+        <span class="center1-span-sub">Please select access type</span>
+        <br><br><br>
+    </div>
+
+    <!-- 인덱스_센터2 -->
+    <div class="div-center2">
+        <table class="table-center2">
+            <tr class="tr-center2">
+                <td class="td-center2">
+                    <a href="020700_관리자_인덱스_완성본.html"><img class="img-center2" src="img/admin.png"></a>
+                    <br><br>
+                    관리자
+                </td>
+                <td class="td-center2-gap"></td>
+                <td class="td-center2">
+                    <a href="020200_버거메뉴리스트_완성본.html"><img class="img-center2" src="img/user.png"></a>
+                    <br><br>
+                    사용자
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- 인덱스_풋터 -->
+    <div class="div-footer">
+        <br>
+        <span class="span-bold">Order Management System</span>
+        <br>
+        Designed and developed as part of a student portfolio project.
+        <br>
+        Copyright &copy; 2025 All rights reserved. Created by <span class="span-bold">Hong Guil Dong</span>.
+    </div>     
+</body>
+</html>

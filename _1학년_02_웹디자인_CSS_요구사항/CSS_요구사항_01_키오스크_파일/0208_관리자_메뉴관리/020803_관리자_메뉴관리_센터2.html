@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥도날드</title>
+    <link rel="icon" href="img/favicon.png" tyep="image/png">       
+    <style>
+        /* 공통 */
+        * {
+            margin: 0 auto;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }  
+
+        /* center2 */
+        .div-center {
+            text-align: center;
+            width: 800px;
+            height: 1000px;
+            background-color: #fdffea;            
+        }   
+        .img-center {
+            width: 120px;
+            border-radius: 10px;
+        }  
+        .img-center-delete {
+            width: 30px;
+        } 
+        .table-center {
+            font-size: 16px;
+            color: #333;
+        }
+        .tr-center-header {
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #999;
+            height: 50px;
+        }
+        .tr-center {
+            height: 130px;
+        }        
+        .th-center {
+            width: 130px;
+            text-align: center;
+            border-bottom: 1px solid #999;
+            background-color: #efeeee;
+        }     
+        .th-center-number {
+            width: 50px;
+            text-align: center;
+            background-color: #efeeee;
+        }         
+        .td-center {
+            border-bottom: 1px solid #999;
+            text-align: center;
+        }        
+        .span-item {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007000;
+        }
+        .span-content {
+            font-size: 28px;
+            color: #333;             
+        }
+        .btn-plus {
+            width: 40px;
+            height: 30px;
+            border-radius: 20px;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+        .btn-minus {
+            width: 40px;
+            height: 30px;
+            border-radius: 20px;
+            border: 1px solid #999;
+            cursor: pointer;
+        }     
+        .btn-plus:hover {
+            background-color: #ffd500fd;
+        }
+        .btn-minus:hover {
+            background-color: #ffd500fd;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #007000;
+            text-decoration: underline;
+        }        
+    </style>
+</head>
+<body>
+
+    <div class="div-center">
+        <br><br><br>
+        <span class="span-content">전체 메뉴</span>
+        <br>
+        <span class="span-sub">All Items</span>
+        <br><br><br><br>
+        <table class="table-center">
+            <tr class="tr-center-header">
+                <th class="th-center-number">번호</th>
+                <th class="th-center">이미지</th>
+                <th class="th-center">상품명</th>
+                <th class="th-center">가격</th>
+                <th class="th-center">수량</th>
+                <th class="th-center">삭제</th>
+            </tr>
+            <tr class="tr-center">
+                <td class="td-center">1</td>
+                <td class="td-center"><img class="img-center" src="img/01.png"></td>
+                <td class="td-center">
+                    <a href="adminMenuUpdateForm.html">와퍼</a>
+                </td>
+                <td class="td-center">3500</td>
+                <td class="td-center">
+                    <button class="btn-plus" onclick="location.href='adminStockPlusResult.html'">+</button>&nbsp;&nbsp;
+                    5
+                    &nbsp;&nbsp;<button class="btn-minus" onclick="location.href='adminStockMinusResult.html'">─</button>
+                </td>
+                <td class="td-center">
+                    <a href="adminMenuDeleteResult.html"><img class="img-center-delete" src="img/delete.png"></a>
+                </td>
+            </tr>
+            <tr class="tr-center">
+                <td class="td-center">2</td>
+                <td class="td-center"><img class="img-center" src="img/02.png"></td>
+                <td class="td-center">
+                    <a href="adminMenuUpdateForm.html">치즈와퍼</a>
+                </td>
+                <td class="td-center">4500</td>
+                <td class="td-center">
+                    <button class="btn-plus" onclick="location.href='adminStockPlusResult.html'">+</button>&nbsp;&nbsp;
+                    1
+                    &nbsp;&nbsp;<button class="btn-minus" onclick="location.href='adminStockMinusResult.html'">─</button>
+                </td>
+                <td class="td-center">
+                    <a href="adminMenuDeleteResult.html"><img class="img-center-delete" src="img/delete.png"></a>
+                </td>
+            </tr>
+            <tr class="tr-center">
+                <td class="td-center">3</td>
+                <td class="td-center"><img class="img-center" src="img/03.png"></td>
+                <td class="td-center">
+                    <a href="adminMenuUpdateForm.html">치즈버거</a>
+                </td>
+                <td class="td-center">3000</td>
+                <td class="td-center">
+                    <button class="btn-plus" onclick="location.href='adminStockPlusResult.html'">+</button>&nbsp;&nbsp;
+                    5
+                    &nbsp;&nbsp;<button class="btn-minus" onclick="location.href='adminStockMinusResult.html'">─</button>
+                </td>
+                <td class="td-center">
+                    <a href="adminMenuDeleteResult.html"><img class="img-center-delete" src="img/delete.png"></a>
+                </td>
+            </tr>
+            <tr class="tr-center">
+                <td class="td-center">4</td>
+                <td class="td-center"><img class="img-center" src="img/04.png"></td>
+                <td class="td-center">
+                    <a href="adminMenuUpdateForm.html">불고기버거</a>
+                </td>
+                <td class="td-center">4000</td>
+                <td class="td-center">
+                    <button class="btn-plus" onclick="location.href='adminStockPlusResult.html'">+</button>&nbsp;&nbsp;
+                    3
+                    &nbsp;&nbsp;<button class="btn-minus" onclick="location.href='adminStockMinusResult.html'">─</button>
+                </td>
+                <td class="td-center">
+                    <a href="adminMenuDeleteResult.html"><img class="img-center-delete" src="img/delete.png"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

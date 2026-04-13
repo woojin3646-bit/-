@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥도날드</title>
+    <link rel="icon" href="img/favicon.png" tyep="image/png">       
+    <style>
+        /* 공통 */
+        * {
+            margin: 0 auto;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }  
+        
+        /* center2 */
+        .div-center {
+            text-align: center;
+            width: 800px;
+            height: 1000px;
+            background-color: #fdffea;            
+        }   
+        .tr-center {
+            border: 1px solid #999;
+            height: 60px;
+        }
+        .th-center {
+            border: 1px solid #999;
+            width: 100px;
+            background-color: #efeeee;
+        }
+        .td-center {
+            border: 1px solid #999;
+            width: 250px;
+        }
+        .span-item {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007000;
+        }
+        .span-content {
+            font-size: 28px;
+            color: #333;             
+        }
+        .input-center {
+            width: 200px;
+            height: 40px;
+            border: 1px solid #999;
+            border-radius: 3.5px;
+            padding-left: 15px;            
+        }  
+        .btn-submit {
+            font-size: 16px;
+            width: 350px;
+            height: 55px;
+            border: 1px solid #999;
+            border-radius: 3.5px; 
+            cursor: pointer;           
+        }
+        .btn-submit:hover {
+            background-color: #ffd500fd;
+            color: #007000;
+        }  
+    </style>
+</head>
+<body>
+
+    <div class="div-center">
+        <br><br><br>
+        <span class="span-content">상품 수정</span>
+        <br>
+        <span class="span-sub">Modify Item</span>
+        <br><br><br><br>
+        <table class="table-center">
+            <tr class="tr-center">
+                <th class="th-center">상품번호</th>
+                <td class="td-center">2</td>
+            </tr>
+            <tr class="tr-center">
+                <th class="th-center">상품이름</th>
+                <td class="td-center">
+                    <input class="input-center" type="text" value="치즈와퍼">
+                </td>
+            </tr>      
+            <tr class="tr-center">
+                <th class="th-center">상품가격</th>
+                <td class="td-center">
+                    <input class="input-center" type="text" value="4500">
+                </td>
+            </tr>    
+            <tr class="tr-center">
+                <th class="th-center">상품개수</th>
+                <td class="td-center">
+                    <input class="input-center" type="text" value="1">
+                </td>
+            </tr>          
+            <tr class="tr-center">
+                <th class="th-center">이미지</th>
+                <td class="td-center">
+                    <input class="input-center" type="text" value="2.png">
+                </td>
+            </tr>    
+        </table>
+    
+        <br>
+    
+        <button class="btn-submit" onclick="location.href='adminMenuUpdateFormResult.html'">수정하기</button>
+    </div>
+    
+</body>
+</html>

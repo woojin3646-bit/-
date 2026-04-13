@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let h = 6; // 기상시간
+    let m = Math.floor(Math.random()*91)+30;
+    if( m >= 60 ){
+      h += Math.floor( m / 60);
+      m = m % 60;
+    }
+    document.writeln("기상 시간 : ",h,"시 ", m ,"분", "<br>");
+    
+    m += 40; // 씻고 나가는데 
+    if( m >= 60){
+      h += Math.floor( m / 60);
+      m %= 60;
+    }
+    document.writeln("정류장 도착 시간 : " + h + "시" + m + "분<br>");
+   
+    let eta = h * 60 + m
+    let firstbus = 6 * 60 +24
+    
+    let rain = Math.floor(Math.random()*2);
+    let bus1 = 35;
+    let bus2 = 20;
+
+    if ( rain == 1 ){
+      bus1 += 5;
+      bus2 += 5;
+      document.writeln( "비가 옵니다.<br>");
+    } else{
+      document.writeln( "비가 안 옵니다.<br>");
+    }
+    
+    let wait1 = 0;
+    if ( eta <= firstbus ){
+      wait1 = firstbus - eta;
+    }else{
+      wait1 = 10 - ( eta - firstbus ) % 10;
+      if (( eta - firstbus) % 10 == 0){
+        wait1 =0;
+      }
+    }
+    let wait2 =0;
+    if ( eta <= firstbus ){
+      wait2 = firstbus - eta;
+    }else{
+      wait2 = 20 - (eta -  firstbus) % 20;
+      if (( eta - firstbus) % 20 == 0){
+        wait2 = 0;
+      }
+    }
+    let arr1 = eta + wait1 + bus1 + 10;
+    let arr2 = eta + wait2 + bus2 + 10;
+    
+    let final = 0;
+    if(arr1 < arr2){
+      final = arr1
+      document.writeln("버스1 탔음")
+    }else{
+      final = arr2;
+      document.writeln("버스2 탔음<br>")
+    }
+    document.writeln("버스1 총 소요: " + (wait1 + bus1 + 10) + "분<br>");
+    document.writeln("버스2 총 소요: " + (wait2 + bus2 + 10) + "분<br>");
+
+    let a = 9 * 60
+     document.writeln("최종 도착 시간" + Math.floor( final / 60)+ "시" + ())
+  </script>
+  
+</body>
+</html>

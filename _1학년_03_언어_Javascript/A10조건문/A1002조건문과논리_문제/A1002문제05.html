@@ -16,5 +16,15 @@
         3 3 3 
         o
     */
-   
+   let a = Math.floor(Math.random()*9)+1;
+   let b = Math.floor(Math.random()*9)+1;
+   let c = Math.floor(Math.random()*9)+1;
+
+document.writeln( a +" "+ b +" "+ c);
+
+if (a == b && a == c ){
+    document.writeln("합격");
+} else{
+        document.writeln("불합격")
+    }
 </script>

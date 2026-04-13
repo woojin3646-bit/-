@@ -26,6 +26,17 @@
 		2
 		12    
     */
+let a = Math.floor(Math.random()*6)+1;
+let b = Math.floor(Math.random()*6)+1;
 
+let c = a + b
+let score = 0
+
+if(a == b){
+	document.writeln("추가 이동 교회 ! 찬스 ! <br>")
+}if(a % 2 == 0){
+	score += a
+}
+document.writeln(score)
 	
 </script>

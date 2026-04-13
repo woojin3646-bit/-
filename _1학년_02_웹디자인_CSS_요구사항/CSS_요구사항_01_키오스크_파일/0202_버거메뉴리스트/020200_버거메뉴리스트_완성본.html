@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥도날드</title>
+    <link rel="icon" href="img/favicon.png" tyep="image/png">   
+    <style>
+        /* 공통 */
+        * {
+            margin: 0 auto;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        } 
+
+        /* header */
+        .div-header {
+            text-align: left;
+            width: 800px;
+            height: 170px;
+            font-size: 20px;
+            font-weight: bold;
+        }   
+        .tr-header {
+            height: 150px;
+        }    
+        .td-header-logo {
+            width: 200px;
+        } 
+        .td-header {
+            width: 150px;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #007000;
+            text-decoration: underline;
+        }  
+
+        /* center */
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #007000;
+            text-decoration: underline;
+        }   
+        .div-center {
+            height: 700px;
+        }   
+
+        .tr-center-menu {
+            height: 80px;
+        }      
+        .tr-center-gap {
+            height: 30px;
+        }      
+        .tr-center {
+            height: 200px;
+        }
+        .td-center {
+            text-align: center;
+            width: 250px;
+            color: #333;
+            font-weight: bold;
+            background-color: #faf8f8;
+        }
+        .td-center-gap {
+            width: 15px;
+        }
+        .img-center {
+            width: 200px;
+        }  
+        
+        /* result */
+        .div-result {
+            width: 800px;
+            height: 150px;
+        }
+        .tr-result {
+            height: 100px;
+        }
+        .td-result-img {
+            width: 100px;
+        }
+        .td-result-price {
+            width: 300px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .td-result {
+            width: 500px;
+        }
+        .img-result {
+            width: 50px;
+        }
+        .btn-submit {
+            font-size: 20px;
+            width: 500px;
+            height: 55px;
+            border: 1px solid #999;
+            border-radius: 3.5px; 
+            cursor: pointer;           
+        }
+        .btn-submit:hover {
+            background-color: #ffd500fd;
+            color: #007000;
+        }  
+        .hr-result {
+            height: 0.5px;
+            background-color: #999;
+            border-style: none;
+        }   
+        
+        /* footer */
+        .div-footer {
+            text-align: center;
+            color: #fff;              
+            width: 800px;
+            height: 120px;
+            background-color: #007000;               
+        }
+        .span-bold {
+            font-weight: bold;
+            color: #ffd500fd;
+        }  
+
+    </style>    
+</head>
+<body>
+    <!-- 버거메뉴리스트_헤더 -->
+    <div class="div-header">
+        <br>
+        <table>
+            <tr class="tr-header">
+                <td class="td-header-logo"><a href="buggerMenuList.html"><img src="img/logo.png"></a></td>
+                <td class="td-header"><a href="buggerMenuList.html">Bugger</a></td>
+                <td class="td-header"><a href="sideMenuList.html">side</a></td>
+                <td class="td-header"><a href="cart.html">Cart</a></td>
+                <td class="td-header"><a href="index.html">Home</a></td>
+            </tr>
+        </table>
+    </div>    
+    
+    <br>
+
+    <!-- 버거메뉴리스트_센터 -->
+     <div class="div-center">
+        <table>
+            <tr class="tr-center">
+                <td class="td-center">
+                    <img class="img-center" src="img/01.png">
+                </td>
+                <td class="td-center-gap"></td>
+                <td class="td-center">
+                    <img class="img-center" src="img/02.png">
+                </td>    
+                <td class="td-center-gap"></td>
+                <td class="td-center">
+                    <img class="img-center" src="img/03.png">
+                </td>                         
+            </tr>
+            <tr class="tr-center-menu">
+                <td class="td-center">
+                    <a href="menuOrder.html">맥크리스피 디럭스 버거<br>￦8,600</a>
+                </td>
+                <td class="td-center-gap"></td>
+                <td class="td-center">
+                    <a href="menuOrder.html">맥스파이시 상하이 버거<br>￦9,400</a>
+                </td>
+                <td class="td-center-gap"></td>
+                <td class="td-center">
+                    <a href="menuOrder.html">맥치킨<br>￦5,300</a></td>
+            </tr>   
+            <tr class="tr-center-gap">
+                <td colspan="5"></td>
+            </tr>
+            <tr class="tr-center">
+                <td class="td-center">
+                    <img class="img-center" src="img/04.png">
+                </td>
+                <td class="td-center-gap"></td>
+                <td class="td-center">
+                    <img class="img-center" src="img/05.png">
+                </td>    
+                <td class="td-center-gap"></td>
+                <td class="td-center">
+                    <img class="img-center" src="img/06.png">
+                </td>                         
+            </tr>  
+            <tr class="tr-center-menu">
+                <td class="td-center">
+                    <a href="menuOrder.html">베이컨 토마토 디럭스<br>￦7,600</a>
+                </td>
+                <td class="td-center-gap"></td>
+                <td class="td-center">
+                    <a href="menuOrder.html">불고기 버거<br>￦5,200</a>
+                </td>
+                <td class="td-center-gap"></td>
+                <td class="td-center">
+                    <a href="menuOrder.html">빅맥<br>￦8,000</a>
+                </td>
+            </tr>                           
+        </table>
+    </div>
+    
+    <!-- 버거메뉴리스트_금액 -->
+    <div class="div-result">
+        <table>
+            <tr>
+                <td colspan="3"><hr class="hr-result"></td>
+            </tr>
+            <tr class="tr-result">
+                <td class="td-result-img"><img class="img-result" src="img/cart.png"></td>
+                <td class="td-result-price">￦ 7,800</td>
+                <td class="td-result"><button class="btn-submit" onclick="location.href='cart.html'">주문 내역 확인 후 결제하기</button></td>
+            </tr>
+        </table>
+    </div>   
+    
+    <!-- 버거메뉴리스트_풋터 -->
+    <div class="div-footer">
+        <br>
+        <span class="span-bold">Order Management System</span>
+        <br>
+        Designed and developed as part of a student portfolio project.
+        <br>
+        Copyright &copy; 2025 All rights reserved. Created by <span class="span-bold">Hong Guil Dong</span>.
+    </div>
+</body>
+</html>

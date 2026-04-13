@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>맥도날드</title>
+    <link rel="icon" href="img/favicon.png" tyep="image/png">    
+    <style>
+        /* 공통 */
+        * {
+            margin: 0 auto;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        } 
+
+        /* result */
+        .div-result {
+            width: 800px;
+            height: 250px;
+        }
+        .tr-result {
+            height: 100px;
+        }
+        .td-result-price {
+            text-align: right;
+            width: 400px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .td-result {
+            text-align: right;
+            width: 200px;
+            font-size: 30px;
+            font-weight: bold;            
+        }
+
+        .btn-submit {
+            font-size: 20px;
+            width: 600px;
+            height: 55px;
+            border: 1px solid #999;
+            border-radius: 3.5px; 
+            cursor: pointer;           
+        }
+        .btn-order {
+            font-size: 20px;
+            width: 200px;
+            height: 55px;
+            border: 1px solid #999;
+            border-radius: 3.5px; 
+            cursor: pointer;  
+            background-color: #fff;             
+        }
+        .btn-submit:hover {
+            background-color: #ffd500fd;
+            color: #007000;
+        }  
+        .hr-result {
+            height: 0.5px;
+            background-color: #999;
+            border-style: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div-result">
+        <table>
+            <tr>
+                <td colspan="3"><hr class="hr-result"></td>
+            </tr>
+            <tr class="tr-result">
+                <td class="td-result"></td>
+                <td class="td-result">합계</td>
+                <td class="td-result-price">￦ 28,200</td>
+            </tr>
+            <tr class="tr-result">
+                <td class="td-result">
+                    <button class="btn-order" onclick="location.href='buggerMenuList.html'">추가 주문</button>
+                </td>
+                <td class="td-result-price" colspan="2">
+                    <button class="btn-submit" onclick="location.href='cart.html'">주문 완료</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

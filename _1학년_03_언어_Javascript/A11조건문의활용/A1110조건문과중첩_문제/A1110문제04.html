@@ -34,11 +34,44 @@
         금액이 부족합니다
         900    
     */
+let menu = Math.floor(Math.random()*4)+1;
+let money = (Math.floor(Math.random()*17)+8) * 100;
 
-    document.write("커피 메뉴<br>");
-    document.write("1번 아메리카노 1000원<br>");
-    document.write("2번 까페라떼 1500원<br>");
-    document.write("3번 모카라떼 2000원<br>");
+// 메뉴 출력 (조건 X)
+document.write("커피 메뉴<br>");
+document.write("1번 아메리카노 1000원<br>");
+document.write("2번 까페라떼 1500원<br>");
+document.write("3번 모카라떼 2000원<br><br>");
 
+document.write(menu + "<br>");
+document.write(money + "<br>");
+
+if( menu == 4 ){
+ document.writeln ("잘못된 번호입니다")
+}else{
+    let price = 0;
+    let name = "";
+
+    if(menu == 1){
+        price = 1000
+        name = "아메리카노"
+    }
+        if(menu == 2){
+        price = 1500
+        name = "카페라떼"
+    }
+        if(menu== 3){
+        price = 2000
+        name = "모카라떼"
+    }
+        if( money < price){
+        document.writeln("금액부족");
+        document.writeln(money);
+    }else{
+        document.writeln(name + "를 주문");
+        document.writeln(money - price);
+    }
+
+}
     
 </script>

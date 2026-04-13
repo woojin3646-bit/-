@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!--[코딩 총정리 문제 세트]
+
+1. 23을 7로 나눈 몫 출력
+2. 23을 7로 나눈 나머지 출력
+3. 6453의 백의 자리를 0으로 변경
+
+4. 6453의 천의 자리 + 일의 자리
+5. 6453의 모든 자릿수 합
+
+6. 배열 [184.4, 165.5, 160.8] 최대값
+7. 배열 최소값
+
+8. 배열 오름차순 정렬
+
+9. "hello" 길이
+10. "hello"에서 "e" 출력
+
+11. 10 > 5 && 3 < 1 결과
+12. !(10 > 5)
+
+13. 두 수 더하는 함수 만들기
+
+14. a태그로 네이버 이동
+15. 새창으로 열기
+
+16. 버튼 클릭 시 구글 이동
+17. 버튼 클릭 시 alert("클릭됨")
+
+18. label + input 연결 (이름 입력)
+19. radio 버튼 2개 (하나만 선택)
+
+20. 버튼 hover 색 변경
+21. cursor pointer 적용
+
+22. 주사위 2개 랜덤 + 합 출력    
+23. 1~10 중 4 이상 개수 출력 -->
+</head>
+<body>
+ <script>
+ /* document.writeln(Math.floor(23 / 7 ));
+  document.writeln(Math.floor(23 % 7 ));
+let a = 6453;
+
+let result = Math.floor(a / 1000) * 1000 + (a % 100);
+
+document.writeln(result);
+
+
+let bbb = Math.floor(a / 100) * 100 + (a % 10) ;
+document.writeln(bbb);
+
+document.writeln(Math.floor( a / 100 ) %10);
+document.writeln("<br>");
+document.writeln("<br>");
+
+let v = (Math.floor( a / 1000));
+document.writeln("<br>");
+let d = (Math.floor( a % 10));
+document.writeln("<br>");
+
+document.writeln( v + d);
+
+let q = (Math.floor(a / 1000));
+let w = (Math.floor(a / 100) % 10);
+let e = (Math.floor(a / 10) % 10);
+let r = (Math.floor(a % 10));
+
+document.writeln(q+w+e+r); */
+ 
+let arr = [184.4, 165.5, 160.8];
+arr.sort((a,b) => a - b)
+
+document.writeln(arr[2]+"<br>")
+document.writeln(arr[0]+"<br>")
+document.writeln(arr.sort((a,b) => b - a)+ "<br>")
+
+document.writeln("hello".length + "<br>");
+document.writeln("hello"[1] + "<br>");
+
+let c= 10 > 5 && 3 < 1
+
+let d= !(10 > 5)
+document.writeln(c,d)
+ </script>
+<a href="https://www.naver.com" target="_blank">링크</a>
+<button onclick="location.href='https://google.com'">구글이지롱</button>
+<button onclick="alert('미당첨')">구글이지롱</button>
+
+
+
+
+</body>
+</html>

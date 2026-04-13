@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥도날드</title>
+    <link rel="icon" href="img/favicon.png" tyep="image/png">       
+    <style>
+        /* 공통 */
+        * {
+            margin: 0 auto;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }  
+        
+        /* header */
+        .div-header {
+            text-align: center;
+            width: 800px;
+            height: 250px;
+            background-color: #007000;  
+        }   
+        .tr-header {
+            height: 200px;
+        } 
+        .td-header-menu {
+            text-align: right;
+        }
+        .td-header-content {
+            width: 600px;
+            text-align: left;
+        }
+        .td-header-item {
+            width: 200px;
+            text-align: center;
+        }
+        .img-home {
+            width: 35px;
+        }
+        .img-home:hover {
+            cursor: pointer;
+        }
+        .img-header {
+            width: 120px;
+        }        
+        .span-main {
+            font-size: 28px;
+            color: #fff;  
+        }    
+        .span-sub {
+            font-size: 20px;
+            color: #999;   
+        }   
+        a {
+            text-decoration: none;
+        }
+
+        /* center1 */
+        .div-nav {
+            width: 800px;
+            height: 80px;
+        }
+        .tr-nav {
+            height: 80px;
+        }
+        .td-nav {
+            width: 200px;
+            text-align: center;
+            background-color: #fdffea; 
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #007000;
+            text-decoration: underline;
+        }  
+        
+        /* center2 */
+        .div-center {
+            text-align: center;
+            width: 800px;
+            height: 1000px;
+            background-color: #fdffea;            
+        }   
+        .img-center {
+            width: 100px;
+        }   
+        .tr-center {
+            height: 150px;
+        } 
+        .td-center-item {
+            text-align: center;
+            width: 150px;
+        }
+        .td-center-content {
+            width: 500px;
+        }
+        .span-item {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007000;
+        }
+        .span-content {
+            font-size: 28px;
+            color: #333;             
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #007000;
+            text-decoration: underline;
+        }                 
+        
+        /* footer */
+        .div-footer {
+            text-align: center;
+            color: #fff;              
+            width: 800px;
+            height: 120px;
+            background-color: #007000;               
+        }
+        .span-bold {
+            font-weight: bold;
+            color: #ffd500fd;
+        }           
+    </style>
+</head>
+<body>
+    <!-- 관리자_초기화결과확인_헤더 -->
+    <div class="div-header">
+        <br>
+        <table>
+            <tr>
+                <td class="td-header-menu" colspan="2">
+                    <a href="index.html">
+                        <img class="img-home" src="img/home.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                </td>
+            </tr>
+            <tr class="tr-header">
+                <td class="td-header-item">
+                    <a href="index.html">
+                        <img class="img-header" src="img/logo.png">
+                    </a>
+                </td>
+                <td class="td-header-content">
+                    <span class="span-main">관리자 페이지</span>
+                    <br>
+                    <span class="span-sub">Admin Dashboard</span>
+                </td>
+            </tr>
+        </table>
+    </div>    
+
+    <!-- 관리자_초기화결과확인_센터1 -->
+    <div class="div-nav">
+        <table>
+            <tr class="tr-nav">
+                <td class="td-nav"><a href="adminIndex.html">관리자메인</a></td>
+                <td class="td-nav"><a href="adminMenu.html">전체상품관리</a></td>
+                <td class="td-nav"><a href="adminTestAddResult.html">샘플메뉴추가</a></td>
+                <td class="td-nav"><a href="adminMenuAddForm.html">신규메뉴추가</a></td>
+                <td class="td-nav"><a href="adminResetResult.html">초기화</a></td>
+            </tr>          
+        </table>       
+    </div>  
+    
+    <!-- 관리자_초기화결과확인_센터2 -->    
+    <div class="div-center">
+        <br><br><br>
+        <span class="span-content">초기화 되었습니다.</span>
+        <br>
+        <span class="span-sub">The data has been successfully reset.</span>
+        <br><br><br><br>
+        <img class="img-center" src="img/undo.png">
+        <br><br>
+        <a href="index.html">되돌아가기</a>
+    </div>
+
+    <!-- 관리자_초기화결과확인_풋터 -->
+    <div class="div-footer">
+        <br>
+        <span class="span-bold">Order Management System</span>
+        <br>
+        Designed and developed as part of a student portfolio project.
+        <br>
+        Copyright &copy; 2025 All rights reserved. Created by <span class="span-bold">Hong Guil Dong</span>.
+    </div>    
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+   /*
+    문제: 매일 아침 날씨와 기온을 보고 옷차림을 정합니다.
+    오늘의 날씨는 맑음, 흐림, 비, 눈 중 하나이며,
+    날씨에 따라 체감온도가 달라집니다.체감온도를 기준으로 추천 옷차림을 출력하시오.
+
+
+
+
+    출력 예시)
+    오늘의 날씨: 비
+    오늘의 기온: 12도
+    오늘의 체감온도: 9도
+    추천 옷차림: 코트 + 우산 추천
+
+
+
+
+    조건)
+    날씨값이 1이면 "맑음", 날씨값이 2이면 "흐림"
+    날씨값이 3이면 "비", 날씨값이 4이면 "눈"
+    기온은 -30도부터 50도 사이의 실수입니다.
+
+
+
+
+    맑음인 날은 체감온도가 실제 기온과 같습니다.
+    흐림인 날은 체감온도가 실제 기온보다 1도 낮습니다.
+    비가 오는 날은 체감온도가 실제 기온보다 3도 낮습니다.
+    눈이 오는 날은 체감온도가 실제 기온보다 5도 낮습니다.
+
+
+
+
+    */
+
+
+
+
+    // 날씨값 1 ~ 4
+    let weather = Math.floor(Math.random() * 4) + 1;
+
+
+    // 기온값
+    let temp = 0;
+
+
+    if (weather == 4) {
+        temp = Math.floor(Math.random() * 30) - 30;
+    }
+    if (weather != 4) {
+        temp = Math.floor(Math.random() * 81) - 30;
+    }
+
+
+    // 체감온도
+    let feelTemp = temp;
+
+
+    let weatherName = "";
+    let result = "";
+
+
+    // 날씨 이름
+    if (weather == 1) {
+        weatherName = "맑음";
+    }
+    if (weather == 2) {
+        weatherName = "흐림";
+    }
+    if (weather == 3) {
+        weatherName = "비";
+    }
+    if (weather == 4) {
+        weatherName = "눈";
+    }
+
+
+    // 체감온도 계산
+    if (weather == 1) {
+        feelTemp = temp;
+    }
+    if (weather == 2) {
+        feelTemp = temp - 1;
+    }
+    if (weather == 3) {
+        feelTemp = temp - 3;
+    }
+    if (weather == 4) {
+        feelTemp = temp - 5;
+    }
+
+
+    // 추천 옷차림
+    // 맑음
+    if (weather == 1 && feelTemp < 0) {
+        result = "패딩 추천";
+    }
+    if (weather == 1 && feelTemp >= 0 && feelTemp < 15) {
+        result = "코트 추천";
+    }
+    if (weather == 1 && feelTemp >= 15 && feelTemp < 25) {
+        result = "긴팔 추천";
+    }
+    if (weather == 1 && feelTemp >= 25) {
+        result = "반팔 추천";
+    }
+
+
+    // 흐림
+    if (weather == 2 && feelTemp < 0) {
+        result = "두꺼운 코트 추천";
+    }
+    if (weather == 2 && feelTemp >= 0 && feelTemp < 15) {
+        result = "자켓 추천";
+    }
+    if (weather == 2 && feelTemp >= 15 && feelTemp < 25) {
+        result = "얇은 긴팔 추천";
+    }
+    if (weather == 2 && feelTemp >= 25) {
+        result = "반팔 + 겉옷 추천";
+    }
+
+
+    // 비
+    if (weather == 3 && feelTemp < 0) {
+        result = "패딩 + 우산 추천";
+    }
+    if (weather == 3 && feelTemp >= 0 && feelTemp < 15) {
+        result = "코트 + 우산 추천";
+    }
+    if (weather == 3 && feelTemp >= 15 && feelTemp < 25) {
+        result = "긴팔 + 우산 추천";
+    }
+    if (weather == 3 && feelTemp >= 25) {
+        result = "반팔 + 우산 추천";
+    }
+
+
+    // 눈
+    if (weather == 4 && feelTemp < 0) {
+        result = "두꺼운 패딩 + 목도리 추천";
+    }
+    if (weather == 4 && feelTemp >= 0) {
+        result = "X";
+    }
+
+
+    document.write("오늘의 날씨: ", weatherName, "<br>");
+    document.write("오늘의 기온: ", temp, "도<br>");
+    document.write("오늘의 체감온도: ", feelTemp, "도<br>");
+    document.write("추천 옷차림: ", result);
+</script>
+
+
+</body>
+</html>

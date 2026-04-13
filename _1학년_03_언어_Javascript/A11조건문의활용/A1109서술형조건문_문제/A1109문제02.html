@@ -17,5 +17,20 @@
         재시험    
     */
     
-    
+    let score = Math.floor(Math.random()*101);
+
+    let a = score % 10 ;
+
+    if ( score >= 91 ){
+        s = "A학점" 
+    }else if ( score >= 81){
+        s = "B학점"
+    }else{
+        s = "재시험" 
+    }
+    if( s != "재시험" &&  ( a >= 8 || score == 100)){
+        s+="+";
+    }
+
+    document.writeln(s);
 </script>

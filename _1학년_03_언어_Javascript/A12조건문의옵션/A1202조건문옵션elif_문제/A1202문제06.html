@@ -25,6 +25,21 @@
         7 5 6
         c가 가깝다
     */
+   
+    let b = 5 
+    let a = Math.floor(Math.random()*9)+1
+    let c = Math.floor(Math.random()*9)+1
+document.writeln(a, " ", b, " ", c, "<br>");
 
+let ab = Math.abs(a-b);
+let cb = Math.abs(c-b);
+
+if (ab < cb){
+    document("a가 가깝다")
+}else if ( ab > cb ){
+    document.writeln("c가 가깝다")
     
+}else{
+    document.writeln("같다")
+}
 </script>

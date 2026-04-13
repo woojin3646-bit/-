@@ -1,7 +1,8 @@
 <script>
     /*
         [문제]
-        1부터 10 사이의 랜덤 숫자 두 개를 저장한 후, 두 숫자를 비교합니다.
+        1부터 10 사이의 랜덤 숫자 두 개를 저장한 후, 
+        두 숫자를 비교합니다.
         두 숫자 중에 더 큰 숫자를 출력합니다.
         만약 서로 같으면 "같다"를 출력하시오.
         단, elif와 else를 사용하시오.
@@ -16,6 +17,13 @@
         같다
     */
 
-    
-    
+    let a = Math.floor(Math.random()*10)+1;
+    let b = Math.floor(Math.random()*10)+1;
+    let score = 0 ;
+    document.writeln( score );
+    if ( a == b ){
+        document.writeln("같다")
+    }else{
+        score = a > b
+    }
 </script>

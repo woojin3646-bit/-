@@ -18,5 +18,20 @@
         35
         x        
     */
-   
+
+let a = Math.floor(Math.random()*90)+10
+let x = Math.floor(a / 10 ) % 10
+let y = a % 10
+
+document.writeln(x,y)
+
+if((x % 2 == 0 && y % 2 != 0) || (x % 2 != 0 && y % 2 == 0)){
+    document.writeln("o")
+}
+else{
+    document.writeln("x")
+}
+
+
+
 </script>

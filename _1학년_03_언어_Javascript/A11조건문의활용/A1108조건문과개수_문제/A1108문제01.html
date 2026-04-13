@@ -12,6 +12,21 @@
         3    
     */
     
+ let a = Math.floor(Math.random()*900)+100;
+ let b = Math.floor(a / 100 ) % 10;
+ let c = Math.floor(a / 10 ) % 10;
+ let d = (a % 10);
  
- 
+ let count = 0
+if(b == 5 || b ==8){
+    count += 1
+}
+if(c == 5 || c ==8){
+    count += 1
+}
+if(d == 5 || d ==8){
+    count += 1
+}
+
+document.writeln(count);
 </script>

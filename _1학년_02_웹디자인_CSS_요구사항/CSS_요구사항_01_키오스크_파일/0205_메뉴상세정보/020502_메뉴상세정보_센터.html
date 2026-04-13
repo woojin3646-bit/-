@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥도날드</title>
+    <link rel="icon" href="img/favicon.png" tyep="image/png">       
+    <style>
+        /* 공통 */
+        * {
+            margin: 0 auto;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }  
+
+        /* center */
+        .div-center {
+            text-align: center;
+            height: 800px;
+        }   
+        .tr-center-title {
+            height: 60px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .tr-center {
+            height: 60px;
+            font-size: 18px;
+        }
+        .td-center-title {
+            width: 200px;
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+        .td-center-content {
+            width: 400px;
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+        .img-center {
+            width: 600px;
+        }
+        .input-center {
+            width: 330px;
+            height: 40px;
+            border: 1px solid #999;
+            border-radius: 3.5px;
+            text-align: center;
+            font-size: 18px;
+        }  
+        .btn-cancel {
+            font-size: 20px;
+            width: 200px;
+            height: 55px;
+            border: 1px solid #999;
+            border-radius: 3.5px; 
+            cursor: pointer;                 
+        }
+        .btn-submit {
+            font-size: 20px;
+            width: 400px;
+            height: 55px;
+            border: 1px solid #999;
+            border-radius: 3.5px; 
+            cursor: pointer;           
+        }
+        .btn-submit:hover {
+            background-color: #ffd500fd;
+            color: #007000;
+        }  
+    </style>
+</head>
+<body>
+
+    <div class="div-center">
+        <table>
+            <tr class="tr-center-title">
+                <td colspan="2">맥크리스피 디럭스 버거</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img class="img-center" src="img/01_detail.png">
+                </td>
+            </tr>
+            <tr class="tr-center">
+                <td class="td-center-title">가격</td>
+                <td class="td-center-content">8600</td>
+            </tr>
+            <tr class="tr-center">
+                <td class="td-center-title">주문수량</td>
+                <td class="td-center-content">
+                    <input class="input-center" type="number" value="1">
+                </td>
+            </tr>
+        </table>
+        
+        <br><br>
+
+        <button class="btn-cancel" onclick="location.href='buggerMenuList.html'">취소</button>
+        <button class="btn-submit" onclick="location.href='addCartResult.html'">장바구니에 담기</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥도날드</title>
+    <link rel="icon" href="img/favicon.png" tyep="image/png">    
+    <style>
+        /* 공통 */
+        * {
+            margin: 0 auto;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        } 
+
+        /* header */
+        .div-header {
+            text-align: left;
+            width: 800px;
+            height: 170px;
+            font-size: 20px;
+            font-weight: bold;
+        }   
+        .tr-header {
+            height: 150px;
+        }    
+        .td-header-logo {
+            width: 200px;
+        } 
+        .td-header {
+            width: 150px;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #007000;
+            text-decoration: underline;
+        }   
+
+        /* center */
+        .div-center {
+            width: 800px;
+            height: 700px;
+        }   
+        .img-center {
+            width: 150px;
+        }        
+        .tr-center {
+            height: 150px;
+            border-top: 1px solid #999;
+        }
+        .td-center-number {
+            width: 50px;
+        }
+        .td-center-img {
+            width: 200px;
+        }
+        .td-center-title {
+            width: 300px;
+        }        
+        .td-center-count {
+            width: 50px;
+        }
+        .td-center-price {
+            width: 100px;
+        }
+        .td-center-btn {
+            width: 100px;
+        }
+        .btn-center {
+            width: 100px;
+            height: 35px;
+            border: 1px solid #999;
+            border-radius: 3.5px; 
+            cursor: pointer;   
+            background-color: #fff;           
+        }
+        .btn-center:hover {
+            background-color: #ffd500fd;
+            color: #007000;            
+        }  
+
+        /* result */
+        .div-result {
+            width: 800px;
+            height: 250px;
+        }
+        .tr-result {
+            height: 100px;
+        }
+        .td-result-price {
+            text-align: right;
+            width: 400px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .td-result {
+            text-align: right;
+            width: 200px;
+            font-size: 30px;
+            font-weight: bold;            
+        }
+
+        .btn-submit {
+            font-size: 20px;
+            width: 600px;
+            height: 55px;
+            border: 1px solid #999;
+            border-radius: 3.5px; 
+            cursor: pointer;           
+        }
+        .btn-order {
+            font-size: 20px;
+            width: 200px;
+            height: 55px;
+            border: 1px solid #999;
+            border-radius: 3.5px; 
+            cursor: pointer;  
+            background-color: #fff;             
+        }
+        .btn-submit:hover {
+            background-color: #ffd500fd;
+            color: #007000;
+        }  
+        .hr-result {
+            height: 0.5px;
+            background-color: #999;
+            border-style: none;
+        }   
+
+        /* footer */
+        .div-footer {
+            text-align: center;
+            color: #fff;              
+            width: 800px;
+            height: 120px;
+            background-color: #007000;               
+        }
+        .span-bold {
+            font-weight: bold;
+            color: #ffd500fd;
+        }                     
+    </style>    
+</head>
+<body>
+    <!-- 카트리스트_헤더 -->
+    <div class="div-header">
+        <br>
+        <table>
+            <tr class="tr-header">
+                <td class="td-header-logo"><a href="buggerMenuList.html"><img src="img/logo.png"></a></td>
+                <td class="td-header"><a href="buggerMenuList.html">Bugger</a></td>
+                <td class="td-header"><a href="sideMenuList.html">side</a></td>
+                <td class="td-header"><a href="cart.html">Cart</a></td>
+                <td class="td-header"><a href="index.html">Home</a></td>
+            </tr>
+        </table>
+    </div>    
+    
+    <br>
+    
+    <!-- 카트리스트_센터 -->
+    <div class="div-center">
+        <table>
+            <tr class="tr-center">
+                <td class="td-center-number">1</td>
+                <td class="td-center-img"><img class="img-center" src="img/01.png"></td>
+                <td class="td-center-title">맥크리스피 디럭스 버거</td>
+                <td class="td-center-count">1</td>
+                <td class="td-center-price">￦ 8,600</td>
+                <td class="td-center-btn"><button class="btn-center">취소</button></td>
+            </tr>            
+            <tr class="tr-center">
+                <td class="td-center-number">2</td>
+                <td class="td-center-img"><img class="img-center" src="img/06.png"></td>
+                <td class="td-center-title">빅맥</td>
+                <td class="td-center-count">2</td>
+                <td class="td-center-price">￦ 16,000</td>
+                <td class="td-center-btn"><button class="btn-center">취소</button></td>
+            </tr>  
+            <tr class="tr-center">
+                <td class="td-center-number">3</td>
+                <td class="td-center-img"><img class="img-center" src="img/10.png"></td>
+                <td class="td-center-title">코카콜라</td>
+                <td class="td-center-count">1</td>
+                <td class="td-center-price">￦ 3,600</td>
+                <td class="td-center-btn"><button class="btn-center">취소</button></td>
+            </tr>                          
+        </table>
+    </div>
+    
+    <!-- 카트리스트_금액 -->
+    <div class="div-result">
+        <table>
+            <tr>
+                <td colspan="3"><hr class="hr-result"></td>
+            </tr>
+            <tr class="tr-result">
+                <td class="td-result"></td>
+                <td class="td-result">합계</td>
+                <td class="td-result-price">￦ 28,200</td>
+            </tr>
+            <tr class="tr-result">
+                <td class="td-result">
+                    <button class="btn-order" onclick="location.href='buggerMenuList.html'">추가 주문</button>
+                </td>
+                <td class="td-result-price" colspan="2">
+                    <button class="btn-submit" onclick="location.href='cart.html'">주문 완료</button>
+                </td>
+            </tr>
+        </table>
+    </div>     
+    
+    <!-- 카트리스트_풋터-->
+    <div class="div-footer">
+        <br>
+        <span class="span-bold">Order Management System</span>
+        <br>
+        Designed and developed as part of a student portfolio project.
+        <br>
+        Copyright &copy; 2025 All rights reserved. Created by <span class="span-bold">Hong Guil Dong</span>.
+    </div>     
+</body>
+</html>

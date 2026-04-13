@@ -12,5 +12,14 @@
         7    
     */
     
+ let a = Math.floor(Math.random()*900)+100;
+ let x = Math.floor( a / 100 );
+ let y = Math.floor( a / 10 ) % 10;
+ let z = a % 10 ;
+   document.writeln( x , y , z  );
+
+ if(20 % x == 0 && 20 % y == 0 && 20 % z == 0){
+    document.writeln( x + y + z );
+ }
 
 </script>

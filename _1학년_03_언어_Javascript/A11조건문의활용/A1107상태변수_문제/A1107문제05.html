@@ -15,6 +15,36 @@
         player2 보
         승리 
     */
+   
+let player1 = Math.floor(Math.random()*3)+1;
+let player2 = Math.floor(Math.random()*3)+1;
 
-  
+let p1 = ""
+  if( player1 == 1 ){
+    p1 = "가위"
+  }
+    if( player1 == 2 ){
+    p1 = "바위"
+  }
+    if( player1 == 3 ){
+    p1 = "보"
+  }
+let p2 =""
+  if( player2 == 1 ){
+    p2 = "가위"
+  }
+    if( player2 == 2 ){
+    p2 = "바위"
+  }
+    if( player2 == 3 ){
+    p2 = "보"
+  }
+document.writeln("플레이어 1", " ", p1," ", "플레이어 2"," ",p2)
+if(p1 == p2){
+    document.writeln("비김")
+}else if( p1 > p2){
+    document.writeln("이김")
+}else if( p1 < p2){
+    document.writeln("짐")
+}
 </script>

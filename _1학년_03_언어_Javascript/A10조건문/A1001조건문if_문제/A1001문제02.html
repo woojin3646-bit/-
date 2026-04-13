@@ -11,7 +11,76 @@
         [출력예시]
         2
         뒤    
+            /*
+        [문제]
+        let a = 9
+        let b = 4
+        let c = 9
+        변수a , b , c 가 서로 다르면 "모두다르다" , 
+        모두 같으면 "모두같다" 를 출력하는 식을 작성하시오.
     */
+
+    /*
+        [문제]
+        let a = 12321;
+        변수 a의 천의자릿수와 십의자릿수가 서로 같으면 "같다" 
+        서로 다르면 "다르다" 를 출력하는 식을 작성하시오.
+    */
+
+    /*
+        [문제]
+        let a = 345;
+        a의 각자릿수를 분리하고 각자릿수중 홀수의 합을구하는식을 작성하시오.
+
+        [출력예시]
+        8
+    */
+
+    /*
+       [문제]
+        마트에서 오이를 3개씩 묶어 1500원에 판매합니다.
+        오이는 묶음 단위로만 판매하므로,
+        부족한 오이는 다음 묶음으로 구매해야 합니다.
+        철수는 오이가 14개 필요합니다. 
+        철수가 지불해야될 금액을 계산하여 출력하시오.     
+    */
+
+    let a = 9
+    let b = 4
+    let c = 9
+    if( a == b && b == c && c == a){
+        document.writeln("모두 같다")
+    } else{
+        document.writeln("모두 다르다")
+    }
     
-   
+w
+let a = 12321:
+let b = Math.floor( a / 1000) % 10;
+let c = ( a / 10 ) % 10;
+
+if( b == c ){
+  document.writeln("같다")
+}else{
+    document.writeln("다르다")
+}
+let a = 345;
+let b = Math.floor( a / 100) % 10;
+let c = Math.floor( a / 10) % 10;
+let d =  a % 10;
+
+if( b % 2 != 0 || c % 2 !=0 || d %2 !=0 ){
+    document.writeln(b+c+d)
+}
+
+let a = 14;
+let b = Math.floor( a / 3 );
+
+if( a % 3!= 0 ){
+    b += 1
+} document.writeln ( b*1500);
+
+
+
+
 </script>
